@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDF9DE851E33B1D400324BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF9DE841E33B1D400324BC6 /* Assets.xcassets */; };
+		CDF9DE911E33B26C00324BC6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDF9DE901E33B26C00324BC6 /* main.cpp */; };
+		CDF9DE941E33B29700324BC6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF9DE931E33B29700324BC6 /* OpenGL.framework */; };
+		CDF9DE961E33B2A100324BC6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF9DE951E33B2A100324BC6 /* CoreFoundation.framework */; };
+		CDF9DE9A1E33B2FA00324BC6 /* OpenAL-Soft.framework in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = CDF9DE981E33B2FA00324BC6 /* OpenAL-Soft.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDF9DE9B1E33B2FA00324BC6 /* SDL2.framework in Copy Files (2 items) */ = {isa = PBXBuildFile; fileRef = CDF9DE991E33B2FA00324BC6 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDF9DE9E1E33E25F00324BC6 /* exc_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDF9DE9C1E33E25F00324BC6 /* exc_handler.cpp */; };
+		CDF9DEA11E33E3D800324BC6 /* macbox_mem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDF9DE9F1E33E3D800324BC6 /* macbox_mem.cpp */; };
+		CDF9DEA41E33EE2B00324BC6 /* macbox_d3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDF9DEA21E33EE2B00324BC6 /* macbox_d3d.cpp */; };
+		CDF9DEA51E33EEED00324BC6 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF9DE991E33B2FA00324BC6 /* SDL2.framework */; };
+		CDF9DEA61E33EF0000324BC6 /* OpenAL-Soft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF9DE981E33B2FA00324BC6 /* OpenAL-Soft.framework */; };
+		CDF9DEA91E33F3C900324BC6 /* macbox_d3ddevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDF9DEA71E33F3C900324BC6 /* macbox_d3ddevice.cpp */; };
+		CDF9DEAD1E33FBF100324BC6 /* macbox_xbe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDF9DEAB1E33FBF100324BC6 /* macbox_xbe.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDF9DE971E33B2DF00324BC6 /* Copy Files (2 items) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDF9DE9A1E33B2FA00324BC6 /* OpenAL-Soft.framework in Copy Files (2 items) */,
+				CDF9DE9B1E33B2FA00324BC6 /* SDL2.framework in Copy Files (2 items) */,
+			);
+			name = "Copy Files (2 items)";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CDF9DE7F1E33B1D300324BC6 /* MacBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDF9DE841E33B1D400324BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDF9DE891E33B1D400324BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDF9DE901E33B26C00324BC6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CDF9DE931E33B29700324BC6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CDF9DE951E33B2A100324BC6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		CDF9DE981E33B2FA00324BC6 /* OpenAL-Soft.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OpenAL-Soft.framework"; path = "Frameworks/OpenAL-Soft.framework"; sourceTree = "<group>"; };
+		CDF9DE991E33B2FA00324BC6 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		CDF9DE9C1E33E25F00324BC6 /* exc_handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exc_handler.cpp; sourceTree = "<group>"; };
+		CDF9DE9D1E33E25F00324BC6 /* exc_handler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exc_handler.hpp; sourceTree = "<group>"; };
+		CDF9DE9F1E33E3D800324BC6 /* macbox_mem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = macbox_mem.cpp; sourceTree = "<group>"; };
+		CDF9DEA01E33E3D800324BC6 /* macbox_mem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = macbox_mem.hpp; sourceTree = "<group>"; };
+		CDF9DEA21E33EE2B00324BC6 /* macbox_d3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = macbox_d3d.cpp; sourceTree = "<group>"; };
+		CDF9DEA31E33EE2B00324BC6 /* macbox_d3d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = macbox_d3d.hpp; sourceTree = "<group>"; };
+		CDF9DEA71E33F3C900324BC6 /* macbox_d3ddevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = macbox_d3ddevice.cpp; sourceTree = "<group>"; };
+		CDF9DEA81E33F3C900324BC6 /* macbox_d3ddevice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = macbox_d3ddevice.hpp; sourceTree = "<group>"; };
+		CDF9DEAA1E33F4CF00324BC6 /* macbox_typedefs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = macbox_typedefs.hpp; sourceTree = "<group>"; };
+		CDF9DEAB1E33FBF100324BC6 /* macbox_xbe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = macbox_xbe.cpp; sourceTree = "<group>"; };
+		CDF9DEAC1E33FBF100324BC6 /* macbox_xbe.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = macbox_xbe.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDF9DE7C1E33B1D300324BC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF9DEA61E33EF0000324BC6 /* OpenAL-Soft.framework in Frameworks */,
+				CDF9DEA51E33EEED00324BC6 /* SDL2.framework in Frameworks */,
+				CDF9DE961E33B2A100324BC6 /* CoreFoundation.framework in Frameworks */,
+				CDF9DE941E33B29700324BC6 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDF9DE761E33B1D300324BC6 = {
+			isa = PBXGroup;
+			children = (
+				CDF9DE921E33B27B00324BC6 /* Frameworks */,
+				CDF9DE811E33B1D300324BC6 /* MacBox */,
+				CDF9DE801E33B1D300324BC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDF9DE801E33B1D300324BC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDF9DE7F1E33B1D300324BC6 /* MacBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDF9DE811E33B1D300324BC6 /* MacBox */ = {
+			isa = PBXGroup;
+			children = (
+				CDF9DE8F1E33B23300324BC6 /* source */,
+				CDF9DE841E33B1D400324BC6 /* Assets.xcassets */,
+				CDF9DE891E33B1D400324BC6 /* Info.plist */,
+			);
+			path = MacBox;
+			sourceTree = "<group>";
+		};
+		CDF9DE8F1E33B23300324BC6 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				CDF9DE901E33B26C00324BC6 /* main.cpp */,
+				CDF9DE9C1E33E25F00324BC6 /* exc_handler.cpp */,
+				CDF9DE9D1E33E25F00324BC6 /* exc_handler.hpp */,
+				CDF9DE9F1E33E3D800324BC6 /* macbox_mem.cpp */,
+				CDF9DEA01E33E3D800324BC6 /* macbox_mem.hpp */,
+				CDF9DEA21E33EE2B00324BC6 /* macbox_d3d.cpp */,
+				CDF9DEA31E33EE2B00324BC6 /* macbox_d3d.hpp */,
+				CDF9DEA71E33F3C900324BC6 /* macbox_d3ddevice.cpp */,
+				CDF9DEA81E33F3C900324BC6 /* macbox_d3ddevice.hpp */,
+				CDF9DEAA1E33F4CF00324BC6 /* macbox_typedefs.hpp */,
+				CDF9DEAB1E33FBF100324BC6 /* macbox_xbe.cpp */,
+				CDF9DEAC1E33FBF100324BC6 /* macbox_xbe.hpp */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		CDF9DE921E33B27B00324BC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDF9DE981E33B2FA00324BC6 /* OpenAL-Soft.framework */,
+				CDF9DE991E33B2FA00324BC6 /* SDL2.framework */,
+				CDF9DE951E33B2A100324BC6 /* CoreFoundation.framework */,
+				CDF9DE931E33B29700324BC6 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDF9DE7E1E33B1D300324BC6 /* MacBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDF9DE8C1E33B1D400324BC6 /* Build configuration list for PBXNativeTarget "MacBox" */;
+			buildPhases = (
+				CDF9DE7B1E33B1D300324BC6 /* Sources */,
+				CDF9DE7C1E33B1D300324BC6 /* Frameworks */,
+				CDF9DE7D1E33B1D300324BC6 /* Resources */,
+				CDF9DE971E33B2DF00324BC6 /* Copy Files (2 items) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacBox;
+			productName = MacBox;
+			productReference = CDF9DE7F1E33B1D300324BC6 /* MacBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDF9DE771E33B1D300324BC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Shogun3D;
+				TargetAttributes = {
+					CDF9DE7E1E33B1D300324BC6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CDF9DE7A1E33B1D300324BC6 /* Build configuration list for PBXProject "MacBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDF9DE761E33B1D300324BC6;
+			productRefGroup = CDF9DE801E33B1D300324BC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDF9DE7E1E33B1D300324BC6 /* MacBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDF9DE7D1E33B1D300324BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF9DE851E33B1D400324BC6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDF9DE7B1E33B1D300324BC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF9DE911E33B26C00324BC6 /* main.cpp in Sources */,
+				CDF9DEAD1E33FBF100324BC6 /* macbox_xbe.cpp in Sources */,
+				CDF9DE9E1E33E25F00324BC6 /* exc_handler.cpp in Sources */,
+				CDF9DEA11E33E3D800324BC6 /* macbox_mem.cpp in Sources */,
+				CDF9DEA41E33EE2B00324BC6 /* macbox_d3d.cpp in Sources */,
+				CDF9DEA91E33F3C900324BC6 /* macbox_d3ddevice.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CDF9DE8A1E33B1D400324BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDF9DE8B1E33B1D400324BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		CDF9DE8D1E33B1D400324BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = MacBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CFLAGS = "-mstackrealign";
+				OTHER_LDFLAGS = (
+					"-pagezero_size",
+					0x10000000,
+					"-segprot",
+					__PAGEZERO,
+					rwx,
+					rwx,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueshogun.MacBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		CDF9DE8E1E33B1D400324BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = MacBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CFLAGS = "-mstackrealign";
+				OTHER_LDFLAGS = (
+					"-pagezero_size",
+					0x10000000,
+					"-segprot",
+					__PAGEZERO,
+					rwx,
+					rwx,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blueshogun.MacBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDF9DE7A1E33B1D300324BC6 /* Build configuration list for PBXProject "MacBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDF9DE8A1E33B1D400324BC6 /* Debug */,
+				CDF9DE8B1E33B1D400324BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDF9DE8C1E33B1D400324BC6 /* Build configuration list for PBXNativeTarget "MacBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDF9DE8D1E33B1D400324BC6 /* Debug */,
+				CDF9DE8E1E33B1D400324BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDF9DE771E33B1D300324BC6 /* Project object */;
+}

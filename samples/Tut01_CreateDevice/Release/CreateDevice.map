@@ -1,0 +1,822 @@
+ CreateDevice
+
+ Timestamp is 459c87b9 (Wed Jan 03 20:51:05 2007)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00008590H .text                   CODE
+ 0002:00000000 0000c4b1H D3D                     CODE
+ 0002:0000c4b8 000013e0H D3D_RD                  CODE
+ 0002:0000d8a0 000038c8H D3D_URW                 CODE
+ 0003:00000000 00000138H .idata$5                DATA
+ 0003:00000140 000010e3H .rdata                  DATA
+ 0003:00001223 00000000H .edata                  DATA
+ 0003:00001224 00000088H .rdata$debug            DATA
+ 0004:00000000 00000004H .CRT$RIA                DATA
+ 0004:00000004 00000004H .CRT$RII20              DATA
+ 0004:00000008 00000004H .CRT$RIZ                DATA
+ 0004:0000000c 00000004H .CRT$XCA                DATA
+ 0004:00000010 00000004H .CRT$XCZ                DATA
+ 0004:00000014 00000004H .CRT$XIA                DATA
+ 0004:00000018 00000004H .CRT$XIC                DATA
+ 0004:0000001c 00000004H .CRT$XIZ                DATA
+ 0004:00000020 00000004H .CRT$XPA                DATA
+ 0004:00000024 00000004H .CRT$XPX                DATA
+ 0004:00000028 00000004H .CRT$XPZ                DATA
+ 0004:0000002c 00000004H .CRT$XTA                DATA
+ 0004:00000030 00000004H .CRT$XTZ                DATA
+ 0004:00000034 00000004H .XAPI$LNA               DATA
+ 0004:00000038 00000004H .XAPI$LNZ               DATA
+ 0004:00000040 00000ec4H .data                   DATA
+ 0004:00000f20 00000260H .bss                    DATA
+ 0005:00000000 00000014H .idata$2                CODE
+ 0005:00000014 00000014H .idata$3                CODE
+ 0005:00000028 00000138H .idata$4                CODE
+ 0005:00000160 0000000eH .idata$6                CODE
+ 0006:00000000 00000010H .XBLD$A                 DATA
+ 0006:00000010 00000030H .XBLD$V                 DATA
+ 0007:00000000 00000001H .tls                    DATA
+ 0007:00000004 00000004H .tls$                   DATA
+ 0007:00000008 00000001H .tls$ZZZ                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000004       __tls_array                00000004     <absolute>
+ 0001:00000000       ?InitD3D@@YAJXZ            00400320 f   CreateDevice.obj
+ 0001:00000090       ?Render@@YAXXZ             004003b0 f   CreateDevice.obj
+ 0001:00000190       _main                      004004b0 f   CreateDevice.obj
+ 0001:000001c0       ?CreateDevice@Direct3D@@SGJIW4_D3DDEVTYPE@@PAXKPAU_D3DPRESENT_PARAMETERS_@@PAPAUD3DDevice@@@Z 004004e0 f i CreateDevice.obj
+ 0001:000001f0       ?Present@D3DDevice@@SGJPBUtagRECT@@0PAX1@Z 00400510 f i CreateDevice.obj
+ 0001:00000200       ?Clear@D3DDevice@@SGJKPBU_D3DRECT@@KKMK@Z 00400520 f i CreateDevice.obj
+ 0001:00000226       _mainXapiStartup@4         00400546 f   xapilib:xapi0.obj
+ 0001:0000029a       _mainCRTStartup            004005ba f   xapilib:xapi0.obj
+ 0001:0000030c       _XapiValidateDiskPartitionEx@8 0040062c f   xapilib:xapiinit.obj
+ 0001:00000384       _XapiCopySectionToFile@16  004006a4 f   xapilib:xapiinit.obj
+ 0001:0000046b       _XapiMapLetterToDirectory@24 0040078b f   xapilib:xapiinit.obj
+ 0001:0000079f       _XapiSetupPerTitleDriveLetters@8 00400abf f   xapilib:xapiinit.obj
+ 0001:000007f4       _XapiBootToDash@12         00400b14 f   xapilib:xapiinit.obj
+ 0001:00000859       _XapiValidateDiskPartition@4 00400b79 f   xapilib:xapiinit.obj
+ 0001:0000086a       _XapiInitProcess@0         00400b8a f   xapilib:xapiinit.obj
+ 0001:000009d9       __cinit@0                  00400cf9 f   xapilib:xapi0dat.obj
+ 0001:00000a31       __rtinit@0                 00400d51 f   xapilib:xapi0dat.obj
+ 0001:00000a5a       _GetLastError@0            00400d7a f   xapilib:error.obj
+ 0001:00000a82       _SetLastError@4            00400da2 f   xapilib:error.obj
+ 0001:00000ab0       _XapiSetLastNTError@4      00400dd0 f   xapilib:error.obj
+ 0001:00000ac7       _XapiRestrictCodeSelectorLimit@0 00400de7 f   xapilib:krnlptch.obj
+ 0001:00000b2b       _XapiApplyKernelPatches@0  00400e4b f   xapilib:krnlptch.obj
+ 0001:00000bf0       _CloseHandle@4             00400f10 f   xapilib:handle.obj
+ 0001:00000c0e       _XapiCallThreadNotifyRoutines@4 00400f2e f   xapilib:thread.obj
+ 0001:00000c46       _UnhandledExceptionFilter@4 00400f66 f   xapilib:thread.obj
+ 0001:00000c82       _XapiThreadStartup@8       00400fa2 f   xapilib:thread.obj
+ 0001:00000d1a       _CreateThread@24           0040103a f   xapilib:thread.obj
+ 0001:00000d88       _XGetSectionHandleA@4      004010a8 f   xapilib:xemodule.obj
+ 0001:00000def       _XLoadSectionByHandle@4    0040110f f   xapilib:xemodule.obj
+ 0001:00000e10       _XFreeSectionByHandle@4    00401130 f   xapilib:xemodule.obj
+ 0001:00000e2e       _XGetSectionSize@4         0040114e f   xapilib:xemodule.obj
+ 0001:00000e38       _lstrcpynA@12              00401158 f   xapilib:lcompata.obj
+ 0001:00000e9d       _XLaunchNewImageA@8        004011bd f   xapilib:launch.obj
+ 0001:00000edf       _XWriteTitleInfoNoReboot@24 004011ff f   xapilib:launch.obj
+ 0001:00000fc0       _XWriteTitleInfoAndRebootA@20 004012e0 f   xapilib:launch.obj
+ 0001:00001007       _BuildUpdateFilePath@12    00401327 f   xapilib:bootutil.obj
+ 0001:00001051       _XoUpdateLoadXBEInfo@8     00401371 f   xapilib:bootutil.obj
+ 0001:0000111d       _XoUpdateGetSavedDataFromLaunchPage@12 0040143d f   xapilib:bootutil.obj
+ 0001:00001181       _XapipUpdateGetCurrentDDriveMapping@8 004014a1 f   xapilib:bootutil.obj
+ 0001:00001213       _XapipUpdateSaveDDriveMappingToLaunchPage@8 00401533 f   xapilib:bootutil.obj
+ 0001:00001294       _XapipUpdateDetectAndVerify@16 004015b4 f   xapilib:bootutil.obj
+ 0001:00001416       _XapipLaunchNewImageInternal@16 00401736 f   xapilib:bootutil.obj
+ 0001:00001597       _XapipUpdateRebootIfNecessary@0 004018b7 f   xapilib:bootutil.obj
+ 0001:000016fc       _XGetParentalControlSetting@0 00401a1c f   xapilib:xgetparentalcontrolsetting.obj
+ 0001:00001721       _GetDiskFreeSpaceExA@16    00401a41 f   xapilib:pathmisc.obj
+ 0001:00001815       _XapiSelectCachePartition@12 00401b35 f   xapilib:pathmisc.obj
+ 0001:00001a60       _XMountUtilityDrive@4      00401d80 f   xapilib:pathmisc.obj
+ 0001:00001b65       _HeapFree@12               00401e85 f   xapilib:xapiheap.obj
+ 0001:00001b7c       _GetProcessHeap@0          00401e9c f   xapilib:xapiheap.obj
+ 0001:00001b82       _LocalAlloc@8              00401ea2 f   xapilib:xapiheap.obj
+ 0001:00001b9f       _LocalFree@4               00401ebf f   xapilib:xapiheap.obj
+ 0001:00001bbd       _RtlpCreateUnCommittedRange@4 00401edd f   xapilib:heap.obj
+ 0001:00001cdd       _RtlpDestroyUnCommittedRange@8 00401ffd f   xapilib:heap.obj
+ 0001:00001cfe       _RtlpInsertUnCommittedPages@12 0040201e f   xapilib:heap.obj
+ 0001:00001d91       _RtlpFindAndCommitPages@16 004020b1 f   xapilib:heap.obj
+ 0001:00001f1c       _RtlpCoalesceFreeBlocks@16 0040223c f   xapilib:heap.obj
+ 0001:000021c1       _RtlpInsertFreeBlock@12    004024e1 f   xapilib:heap.obj
+ 0001:000022bb       _RtlpInitializeHeapSegment@28 004025db f   xapilib:heap.obj
+ 0001:000023d9       _RtlpExtendHeap@8          004026f9 f   xapilib:heap.obj
+ 0001:00002560       _RtlpDeCommitFreeBlock@12  00402880 f   xapilib:heap.obj
+ 0001:0000280a       _RtlCreateHeap@24          00402b2a f   xapilib:heap.obj
+ 0001:00002c2e       _RtlAllocateHeap@12        00402f4e f   xapilib:heap.obj
+ 0001:000033a9       _RtlFreeHeap@12            004036c9 f   xapilib:heap.obj
+ 0001:0000359d       _XAutoPowerDownResetTimer@0 004038bd f   xapilib:powerdwn.obj
+ 0001:000035b8       _XapiAutoPowerDownTimeout@16 004038d8 f   xapilib:powerdwn.obj
+ 0001:000035ca       _XapiInitAutoPowerDown@0   004038ea f   xapilib:powerdwn.obj
+ 0001:0000363e       _XapiShutdownChannelStartNextPacket@0 0040395e f   xapilib:xapiterm.obj
+ 0001:00003657       _XapiShutdownChannelStartPacket@8 00403977 f   xapilib:xapiterm.obj
+ 0001:0000365a       _XapiShutdownNotification@4 0040397a f   xapilib:xapiterm.obj
+ 0001:000036b0       _XapiFormatTimeOut@8       004039d0 f   xapilib:support.obj
+ 0001:000036de       _WaitForSingleObjectEx@12  004039fe f   xapilib:synch.obj
+ 0001:00003722       _SleepEx@8                 00403a42 f   xapilib:synch.obj
+ 0001:00003774       _WaitForSingleObject@8     00403a94 f   xapilib:synch.obj
+ 0001:00003786       _Sleep@4                   00403aa6 f   xapilib:synch.obj
+ 0001:00003794       _XapiChangeCodeSelectorLimit@8 00403ab4 f   xapilib:xapidlla.obj
+ 0001:000037b9       _ReadFile@20               00403ad9 f   xapilib:filehops.obj
+ 0001:000038a6       _WriteFile@20              00403bc6 f   xapilib:filehops.obj
+ 0001:0000397c       _SetEndOfFile@4            00403c9c f   xapilib:filehops.obj
+ 0001:00003a00       _SetFilePointer@16         00403d20 f   xapilib:filehops.obj
+ 0001:00003afa       _SetFilePointerEx@20       00403e1a f   xapilib:filehops.obj
+ 0001:00003bc2       _FlushFileBuffers@4        00403ee2 f   xapilib:filehops.obj
+ 0001:00003be9       _CreateFileA@28            00403f09 f   xapilib:fileopcr.obj
+ 0001:00003d74       _XComputeContentSignatureKey@8 00404094 f   xapilib:contsig.obj
+ 0001:00003d93       _XapiComputeContentHeaderSignature@16 004040b3 f   xapilib:contsig.obj
+ 0001:00003e78       _XapiLoadContentMetadataHeader@16 00404198 f   xapilib:contsig.obj
+ 0001:00003f59       _XMemAlloc@8               00404279 f   xapilib:xmem.obj
+ 0001:00003ff9       _XMemFree@8                00404319 f   xapilib:xmem.obj
+ 0001:00004013       _XapiFormatFATVolumeEx@8   00404333 f   xapilib:format.obj
+ 0001:00004340       @RtlFindFirstSetRightMember@4 00404660 f   xapilib:bitmapa.obj
+ 0001:00004344       _XQueryValue@20            00404664 f   xapilib:xqueryvalue.obj
+ 0001:00004366       _XShaHmacInitialize@12     00404686 f   xapilib:xcalcsig.obj
+ 0001:000043c8       _XShaHmacUpdate@12         004046e8 f   xapilib:xcalcsig.obj
+ 0001:000043cd       _XShaHmacComputeFinal@16   004046ed f   xapilib:xcalcsig.obj
+ 0001:0000443f       _XPhysicalAlloc@16         0040475f f   xapilib:physical.obj
+ 0001:00004482       _XPhysicalAllocEx@20       004047a2 f   xapilib:physical.obj
+ 0001:000044af       _XPhysicalFree@4           004047cf f   xapilib:physical.obj
+ 0001:000044b6       _XcSHAFinal@8              004047d6 f   xboxkrnl:xboxkrnl.exe
+ 0001:000044bc       _XcSHAUpdate@12            004047dc f   xboxkrnl:xboxkrnl.exe
+ 0001:000044c2       _XcSHAInit@4               004047e2 f   xboxkrnl:xboxkrnl.exe
+ 0001:000044c8       _ExQueryNonVolatileSetting@20 004047e8 f   xboxkrnl:xboxkrnl.exe
+ 0001:000044ce       _XcHMAC@28                 004047ee f   xboxkrnl:xboxkrnl.exe
+ 0001:000044d4       _DbgPrint                  004047f4 f   xboxkrnl:xboxkrnl.exe
+ 0001:000044e0       _memset                    00404800 f   LIBC:memset.obj
+ 0001:00004540       __fpclear                  00404860 f   LIBC:fpinit.obj
+ 0001:00004541       __cfltcvt_init             00404861 f   LIBC:fpinit.obj
+ 0001:00004579       __fpmath                   00404899 f   LIBC:fpinit.obj
+ 0001:0000458d       __snwprintf                004048ad f   LIBC:snwprint.obj
+ 0001:000045fd       _sprintf                   0040491d f   LIBC:sprintf.obj
+ 0001:00004658       __SEH_prolog               00404978 f   LIBC:sehprolg.obj
+ 0001:00004693       __SEH_epilog               004049b3 f   LIBC:sehprolg.obj
+ 0001:000046ac       __except_handler3          004049cc f   LIBC:exsup3.obj
+ 0001:0000477e       __seh_longjmp_unwind@4     00404a9e f   LIBC:exsup3.obj
+ 0001:00004799       __snprintf                 00404ab9 f   LIBC:snprintf.obj
+ 0001:000047f0       _strncpy                   00404b10 f   LIBC:strncpy.obj
+ 0001:00004914       __strnicmp                 00404c34 f   LIBC:strnicmp.obj
+ 0001:00004970       __chkstk                   00404c90 f   LIBC:chkstk.obj
+ 0001:00004970       __alloca_probe             00404c90     LIBC:chkstk.obj
+ 0001:000049c0       __allmul                   00404ce0 f   LIBC:llmul.obj
+ 0001:00004a00       _memmove                   00404d20 f   LIBC:memmove.obj
+ 0001:00004d40       __global_unwind2           00405060 f   LIBC:exsup.obj
+ 0001:00004d82       __local_unwind2            004050a2 f   LIBC:exsup.obj
+ 0001:00004dda       __NLG_Return2              004050fa     LIBC:exsup.obj
+ 0001:00004dea       __abnormal_termination     0040510a f   LIBC:exsup.obj
+ 0001:00004e0d       __NLG_Notify1              0040512d f   LIBC:exsup.obj
+ 0001:00004e16       __NLG_Notify               00405136 f   LIBC:exsup.obj
+ 0001:00004e29       __NLG_Dispatch             00405149     LIBC:exsup.obj
+ 0001:00004e30       __aulldiv                  00405150 f   LIBC:ulldiv.obj
+ 0001:00004ea0       __alldiv                   004051c0 f   LIBC:lldiv.obj
+ 0001:00004f4c       __ftol2                    0040526c f   LIBC:ftol2.obj
+ 0001:00004fc1       __vsnprintf                004052e1 f   LIBC:vsnprint.obj
+ 0001:00005017       __forcdecpt                00405337 f   LIBC:cvt.obj
+ 0001:0000506f       __cropzeros                0040538f f   LIBC:cvt.obj
+ 0001:000050ba       __positive                 004053da f   LIBC:cvt.obj
+ 0001:000050d4       __fassign                  004053f4 f   LIBC:cvt.obj
+ 0001:00005135       __cftoe                    00405455 f   LIBC:cvt.obj
+ 0001:00005221       __cftof                    00405541 f   LIBC:cvt.obj
+ 0001:00005300       __cftog                    00405620 f   LIBC:cvt.obj
+ 0001:000053aa       __cfltcvt                  004056ca f   LIBC:cvt.obj
+ 0001:000053fb       __setdefaultprecision      0040571b f   LIBC:fp8.obj
+ 0001:0000540d       __flsbuf                   0040572d f   LIBC:_flsbuf.obj
+ 0001:000055aa       __woutput                  004058ca f   LIBC:woutput.obj
+ 0001:00005dfc       __output                   0040611c f   LIBC:output.obj
+ 0001:00006583       _tolower                   004068a3 f   LIBC:tolower.obj
+ 0001:000065c0       ___ascii_stricmp           004068e0 f   LIBC:_stricmp.obj
+ 0001:00006610       ___ascii_strnicmp          00406930 f   LIBC:_strnicm.obj
+ 0001:00006671       __isctype                  00406991 f   LIBC:isctype.obj
+ 0001:00006692       __ZeroTail                 004069b2 f   LIBC:intrncvt.obj
+ 0001:000066c4       __IncMan                   004069e4 f   LIBC:intrncvt.obj
+ 0001:00006711       __RoundMan                 00406a31 f   LIBC:intrncvt.obj
+ 0001:00006783       __CopyMan                  00406aa3 f   LIBC:intrncvt.obj
+ 0001:0000679e       __IsZeroMan                00406abe f   LIBC:intrncvt.obj
+ 0001:000067b7       __ShrMan                   00406ad7 f   LIBC:intrncvt.obj
+ 0001:00006832       __ld12cvt                  00406b52 f   LIBC:intrncvt.obj
+ 0001:0000698a       __ld12tod                  00406caa f   LIBC:intrncvt.obj
+ 0001:000069a0       __ld12tof                  00406cc0 f   LIBC:intrncvt.obj
+ 0001:000069b6       __atodbl                   00406cd6 f   LIBC:intrncvt.obj
+ 0001:000069e3       __atoflt                   00406d03 f   LIBC:intrncvt.obj
+ 0001:00006a10       __fptostr                  00406d30 f   LIBC:_fptostr.obj
+ 0001:00006a8f       ___dtold                   00406daf f   LIBC:cfout.obj
+ 0001:00006b49       __fltout                   00406e69 f   LIBC:cfout.obj
+ 0001:00006bad       __fptrap                   00406ecd f   LIBC:crt0fp.obj
+ 0001:00006cd6       __control87                00406ff6 f   LIBC:ieee87.obj
+ 0001:00006d08       __controlfp                00407028 f   LIBC:ieee87.obj
+ 0001:00006d1e       __lseek                    0040703e f   LIBC:lseek.obj
+ 0001:00006da8       __ioinit                   004070c8 f   LIBC:ioinit.obj
+ 0001:00006e09       __write                    00407129 f   LIBC:write.obj
+ 0001:00006fa3       __getbuf                   004072c3 f   LIBC:_getbuf.obj
+ 0001:00006fe7       __isatty                   00407307 f   LIBC:isatty.obj
+ 0001:0000700e       ___initstdio               0040732e f   LIBC:_file.obj
+ 0001:000070b4       ___endstdio                004073d4 f   LIBC:_file.obj
+ 0001:000070c8       _fputwc                    004073e8 f   LIBC:fputwc.obj
+ 0001:00007189       _free                      004074a9 f   LIBC:free.obj
+ 0001:000071a0       __heap_alloc               004074c0 f   LIBC:malloc.obj
+ 0001:000071c7       __nh_malloc                004074e7 f   LIBC:malloc.obj
+ 0001:000071f3       _malloc                    00407513 f   LIBC:malloc.obj
+ 0001:00007205       _mbtowc                    00407525 f   LIBC:mbtowc.obj
+ 0001:00007240       __aulldvrm                 00407560 f   LIBC:ulldvrm.obj
+ 0001:000072d5       _wctomb                    004075f5 f   LIBC:wctomb.obj
+ 0001:000072ff       ___addl                    0040761f f   LIBC:mantold.obj
+ 0001:00007320       ___add_12                  00407640 f   LIBC:mantold.obj
+ 0001:0000737e       ___shl_12                  0040769e f   LIBC:mantold.obj
+ 0001:000073ac       ___shr_12                  004076cc f   LIBC:mantold.obj
+ 0001:000073d9       ___mtold12                 004076f9 f   LIBC:mantold.obj
+ 0001:000074a7       ___strgtold12              004077c7 f   LIBC:strgtold.obj
+ 0001:0000791e       _$I10_OUTPUT               00407c3e f   LIBC:x10fout.obj
+ 0001:00007b95       __amsg_exit                00407eb5 f   LIBC:crt0.obj
+ 0001:00007c49       __exit                     00407f69 f   LIBC:crt0dat.obj
+ 0001:00007c56       __dosmaperr                00407f76 f   LIBC:dosmap.obj
+ 0001:00007cb5       __free_osfhnd              00407fd5 f   LIBC:osfinfo.obj
+ 0001:00007cf9       __get_osfhandle            00408019 f   LIBC:osfinfo.obj
+ 0001:00007d35       __lseeki64                 00408055 f   LIBC:lseeki64.obj
+ 0001:00007dd2       _calloc                    004080f2 f   LIBC:calloc.obj
+ 0001:00007e1f       __fcloseall                0040813f f   LIBC:closeall.obj
+ 0001:00007e77       __flush                    00408197 f   LIBC:fflush.obj
+ 0001:00007ed4       _fflush                    004081f4 f   LIBC:fflush.obj
+ 0001:00007f7c       __flushall                 0040829c f   LIBC:fflush.obj
+ 0001:00007f85       __flswbuf                  004082a5 f   LIBC:_flswbuf.obj
+ 0001:000080aa       __callnewh                 004083ca f   LIBC:handler.obj
+ 0001:000080c5       ___ld12mul                 004083e5 f   LIBC:tenpow.obj
+ 0001:000082e7       ___multtenpow12            00408607 f   LIBC:tenpow.obj
+ 0001:0000835d       __NMSG_WRITE               0040867d f   LIBC:crt0msg.obj
+ 0001:00008389       __FF_MSGBANNER             004086a9 f   LIBC:crt0msg.obj
+ 0001:000083ab       _fclose                    004086cb f   LIBC:fclose.obj
+ 0001:00008401       __commit                   00408721 f   LIBC:commit.obj
+ 0001:00008456       __close                    00408776 f   LIBC:close.obj
+ 0001:00008507       __freebuf                  00408827 f   LIBC:_freebuf.obj
+ 0001:00008532       _QueryPerformanceCounter@4 00408852 f   xapilib:perfctr.obj
+ 0001:00008543       _QueryPerformanceFrequency@4 00408863 f   xapilib:perfctr.obj
+ 0001:00008557       _OutputDebugStringA@4      00408877 f   xapilib:outputdebugstringa.obj
+ 0001:0000858a       _RtlUnwind@16              004088aa f   xboxkrnl:xboxkrnl.exe
+ 0002:00000000       _Direct3DCreate8@4         004088c0 f   d3d8:enum.obj
+ 0002:00000010       _Direct3D_CreateDevice@24  004088d0 f   d3d8:d3ddev.obj
+ 0002:00000b20       _D3DDevice_Swap@4          004093e0 f   d3d8:present.obj
+ 0002:00000c10       ?GPUScale@D3D@@YGXPAUD3DSurface@@0M@Z 004094d0 f   d3d8:present.obj
+ 0002:00000cd0       _D3DDevice_Clear@24        00409590 f   d3d8:clear.obj
+ 0002:000010b8       ?GetDisplayCapabilities@CMiniport@D3D@@SGKXZ 00409978 f   d3d8:mpmode.obj
+ 0002:000010d7       ?GetTableForCurrentAvInfo@D3D@@YGPBUDISPLAYMODE@1@XZ 00409997 f   d3d8:mpmode.obj
+ 0002:00001150       ?SetVideoMode@CMiniport@D3D@@QAEJKKKKW4_D3DFORMAT@@KK@Z 00409a10 f   d3d8:mpmode.obj
+ 0002:000013c0       _D3DDevice_SetTransform@8  00409c80 f   d3d8:d3dbase.obj
+ 0002:000014e0       _D3DDevice_BlockUntilIdle@0 00409da0 f   d3d8:d3dbase.obj
+ 0002:000014f0       _D3DDevice_BlockUntilVerticalBlank@0 00409db0 f   d3d8:d3dbase.obj
+ 0002:00001520       _D3DDevice_SetFlickerFilter@4 00409de0 f   d3d8:d3dbase.obj
+ 0002:00001570       _D3DDevice_SetSoftDisplayFilter@4 00409e30 f   d3d8:d3dbase.obj
+ 0002:000015d0       ?GetPitch@PixelJar@D3D@@YGKPAUD3DPixelContainer@@@Z 00409e90 f i d3d8:d3dbase.obj
+ 0002:00001640       _D3DDevice_SetRenderTarget@8 00409f00 f   d3d8:d3dbase.obj
+ 0002:000018c0       _D3DDevice_GetBackBuffer2@4 0040a180 f   d3d8:d3dbase.obj
+ 0002:00001910       _D3DDevice_SetViewport@4   0040a1d0 f   d3d8:d3dbase.obj
+ 0002:00001b40       _D3DDevice_SetTexture@8    0040a400 f   d3d8:d3dbase.obj
+ 0002:00001cf0       _D3DDevice_IsBusy@0        0040a5b0 f   d3d8:d3dbase.obj
+ 0002:00001d20       ?SetTileNoWait@D3D@@YGXKPBU_D3DTILE@@@Z 0040a5e0 f   d3d8:d3dbase.obj
+ 0002:00001e00       _D3DDevice_SetScissors@12  0040a6c0 f   d3d8:d3dbase.obj
+ 0002:00002100       _D3DDevice_SetScreenSpaceOffset@8 0040a9c0 f   d3d8:d3dbase.obj
+ 0002:00002150       ?D3DInternals@D3D@@YAJKPAX@Z 0040aa10 f   d3d8:d3dbase.obj
+ 0002:000023a0       ?InitializeKelvin@D3D@@YGXXZ 0040ac60 f   d3d8:dxgcreate.obj
+ 0002:00002490       ?InitializeHardware@D3D@@YGXXZ 0040ad50 f   d3d8:dxgcreate.obj
+ 0002:000025a0       ?InitializeD3dState@D3D@@YGXXZ 0040ae60 f   d3d8:dxgcreate.obj
+ 0002:00002670       ?FreeFrameBuffers@CDevice@D3D@@QAEXXZ 0040af30 f   d3d8:dxgcreate.obj
+ 0002:000027a0       ?InitializeFrameBuffers@CDevice@D3D@@QAEJPAU_D3DPRESENT_PARAMETERS_@@@Z 0040b060 f   d3d8:dxgcreate.obj
+ 0002:00002d40       ?Init@CDevice@D3D@@QAEJPAU_D3DPRESENT_PARAMETERS_@@@Z 0040b600 f   d3d8:dxgcreate.obj
+ 0002:00003210       ?UnInit@CDevice@D3D@@QAEXXZ 0040bad0 f   d3d8:dxgcreate.obj
+ 0002:000033c0       _D3DDevice_SetRenderState_PSTextureModes@4 0040bc80 f   d3d8:state.obj
+ 0002:000033f0       @D3DDevice_SetRenderState_Simple@8 0040bcb0 f   d3d8:state.obj
+ 0002:00003420       _D3DDevice_SetRenderStateNotInline@8 0040bce0 f   d3d8:state.obj
+ 0002:00003480       _D3DDevice_GetViewportOffsetAndScale@8 0040bd40 f   d3d8:state.obj
+ 0002:000035b0       ?UpdateProjectionViewportTransform@D3D@@YGXXZ 0040be70 f   d3d8:state.obj
+ 0002:000036f0       _D3DDevice_SetRenderState_EdgeAntiAlias@4 0040bfb0 f   d3d8:state.obj
+ 0002:00003730       _D3DDevice_SetRenderState_ShadowFunc@4 0040bff0 f   d3d8:state.obj
+ 0002:00003770       _D3DDevice_SetRenderState_FogColor@4 0040c030 f   d3d8:state.obj
+ 0002:000037c0       _D3DDevice_SetRenderState_CullMode@4 0040c080 f   d3d8:state.obj
+ 0002:00003830       _D3DDevice_SetRenderState_FrontFace@4 0040c0f0 f   d3d8:state.obj
+ 0002:00003870       _D3DDevice_SetRenderState_NormalizeNormals@4 0040c130 f   d3d8:state.obj
+ 0002:000038b0       _D3DDevice_SetRenderState_TextureFactor@4 0040c170 f   d3d8:state.obj
+ 0002:00003910       _D3DDevice_SetRenderState_LineWidth@4 0040c1d0 f   d3d8:state.obj
+ 0002:00003980       _D3DDevice_SetRenderState_Dxt1NoiseEnable@4 0040c240 f   d3d8:state.obj
+ 0002:00003a00       _D3DDevice_SetRenderState_ZBias@4 0040c2c0 f   d3d8:state.obj
+ 0002:00003a80       _D3DDevice_SetRenderState_LogicOp@4 0040c340 f   d3d8:state.obj
+ 0002:00003ae0       _D3DDevice_SetRenderState_FillMode@4 0040c3a0 f   d3d8:state.obj
+ 0002:00003b30       _D3DDevice_SetRenderState_BackFillMode@4 0040c3f0 f   d3d8:state.obj
+ 0002:00003b90       _D3DDevice_SetRenderState_TwoSidedLighting@4 0040c450 f   d3d8:state.obj
+ 0002:00003c10       _D3DDevice_SetRenderState_VertexBlend@4 0040c4d0 f   d3d8:state.obj
+ 0002:00003c60       _D3DDevice_SetTextureState_TexCoordIndex@8 0040c520 f   d3d8:state.obj
+ 0002:00003d70       _D3DDevice_SetTextureState_BumpEnv@12 0040c630 f   d3d8:state.obj
+ 0002:00003de0       _D3DDevice_SetTextureState_BorderColor@8 0040c6a0 f   d3d8:state.obj
+ 0002:00003e20       _D3DDevice_SetTextureState_ColorKeyColor@8 0040c6e0 f   d3d8:state.obj
+ 0002:00003e60       _D3DDevice_SetTextureStageStateNotInline@12 0040c720 f   d3d8:state.obj
+ 0002:00003f50       ?CommonSetTextureBumpEnv@D3D@@YIPCKPAVCDevice@1@PCK@Z 0040c810 f   d3d8:state.obj
+ 0002:00003fc0       ?CommonSetViewport@D3D@@YIPCKPAVCDevice@1@PCK@Z 0040c880 f   d3d8:state.obj
+ 0002:000041b0       ?CommonSetControl0@D3D@@YIPCKPAVCDevice@1@PCK@Z 0040ca70 f   d3d8:state.obj
+ 0002:00004210       ?CommonSetDebugRegisters@D3D@@YIXXZ 0040cad0 f   d3d8:state.obj
+ 0002:000042e0       ?CommonSetMultiSampleModeAndScale@D3D@@YIXPAVCDevice@1@PBU_D3DVIEWPORT8@@@Z 0040cba0 f   d3d8:state.obj
+ 0002:00004640       _D3DDevice_SetRenderState_ZEnable@4 0040cf00 f   d3d8:state.obj
+ 0002:000046d0       _D3DDevice_SetRenderState_StencilEnable@4 0040cf90 f   d3d8:state.obj
+ 0002:00004770       _D3DDevice_SetRenderState_StencilFail@4 0040d030 f   d3d8:state.obj
+ 0002:000047e0       _D3DDevice_SetRenderState_YuvEnable@4 0040d0a0 f   d3d8:state.obj
+ 0002:00004810       _D3DDevice_SetRenderState_OcclusionCullEnable@4 0040d0d0 f   d3d8:state.obj
+ 0002:00004880       _D3DDevice_SetRenderState_StencilCullEnable@4 0040d140 f   d3d8:state.obj
+ 0002:000048f0       _D3DDevice_SetRenderState_RopZCmpAlwaysRead@4 0040d1b0 f   d3d8:state.obj
+ 0002:00004910       _D3DDevice_SetRenderState_RopZRead@4 0040d1d0 f   d3d8:state.obj
+ 0002:00004930       _D3DDevice_SetRenderState_DoNotCullUncompressed@4 0040d1f0 f   d3d8:state.obj
+ 0002:00004950       _D3DDevice_SetRenderState_MultiSampleMode@4 0040d210 f   d3d8:state.obj
+ 0002:00004980       _D3DDevice_SetRenderState_MultiSampleRenderTargetMode@4 0040d240 f   d3d8:state.obj
+ 0002:000049b0       _D3DDevice_SetRenderState_MultiSampleAntiAlias@4 0040d270 f   d3d8:state.obj
+ 0002:00004a30       _D3DDevice_SetRenderState_MultiSampleMask@4 0040d2f0 f   d3d8:state.obj
+ 0002:00004a80       _D3DDevice_SetRenderState_SampleAlpha@4 0040d340 f   d3d8:state.obj
+ 0002:00004ace       ?ReserveInstMem@CMiniport@D3D@@AAEKK@Z 0040d38e f   d3d8:mpcore.obj
+ 0002:00004ae1       ?InitGammaRamp@CMiniport@D3D@@AAEXK@Z 0040d3a1 f   d3d8:mpcore.obj
+ 0002:00004b21       ?InitDMAChannel@CMiniport@D3D@@QAEHKPAUOBJECTINFO@12@0KPAPAX@Z 0040d3e1 f   d3d8:mpcore.obj
+ 0002:00004b84       ?BindToChannel@CMiniport@D3D@@QAEHPAUOBJECTINFO@12@@Z 0040d444 f   d3d8:mpcore.obj
+ 0002:00004bb8       ?MapRegisters@CMiniport@D3D@@AAEHXZ 0040d478 f   d3d8:mpcore.obj
+ 0002:00004be3       ?GetGeneralInfo@CMiniport@D3D@@AAEHXZ 0040d4a3 f   d3d8:mpcore.obj
+ 0002:00004c24       ?InitEngines@CMiniport@D3D@@AAEHXZ 0040d4e4 f   d3d8:mpcore.obj
+ 0002:00004ca7       ?LoadEngines@CMiniport@D3D@@AAEHXZ 0040d567 f   d3d8:mpcore.obj
+ 0002:00004d3f       ?GetAddressInfo@CMiniport@D3D@@AAEXPAXPAPAXPAKH@Z 0040d5ff f   d3d8:mpcore.obj
+ 0002:00004d99       ?CreateCtxDmaObject@CMiniport@D3D@@QAEHKKPAXKPAUOBJECTINFO@12@@Z 0040d659 f   d3d8:mpcore.obj
+ 0002:00004e68       ?CreateGrObject@CMiniport@D3D@@QAEHKKPAUOBJECTINFO@12@@Z 0040d728 f   d3d8:mpcore.obj
+ 0002:00004ef8       ?TilingUpdateIdle@CMiniport@D3D@@QAEXPAK@Z 0040d7b8 f   d3d8:mpcore.obj
+ 0002:00004f63       ?GetTimerTime@CMiniport@D3D@@AAE_KXZ 0040d823 f   d3d8:mpcore.obj
+ 0002:00004f78       ?EnableTimer@CMiniport@D3D@@AAEXH@Z 0040d838 f   d3d8:mpcore.obj
+ 0002:00004f96       ?SetTimerAlarm@CMiniport@D3D@@AAEX_KH@Z 0040d856 f   d3d8:mpcore.obj
+ 0002:00005064       ?ApplyLGSFix@CMiniport@D3D@@QAEXXZ 0040d924 f   d3d8:mpcore.obj
+ 0002:000050ab       ?InitHardware@CMiniport@D3D@@QAEHXZ 0040d96b f   d3d8:mpcore.obj
+ 0002:0000520d       ?CreateTile@CMiniport@D3D@@QAEHKKKKKKK@Z 0040dacd f   d3d8:mpcore.obj
+ 0002:000053fb       ?DestroyTile@CMiniport@D3D@@QAEHKK@Z 0040dcbb f   d3d8:mpcore.obj
+ 0002:000054bd       ?ShutdownEngines@CMiniport@D3D@@QAEXXZ 0040dd7d f   d3d8:mpcore.obj
+ 0002:00005680       ?BusyLoop@D3D@@YGXXZ       0040df40 f   d3d8:pusher.obj
+ 0002:000056a0       ?ComputeGap@D3D@@YIKPAVCDevice@1@PAUFence@1@PCK@Z 0040df60 f   d3d8:pusher.obj
+ 0002:000056d0       ?DumpMatrixTransposed@D3D@@YGXPCKKPBU_D3DMATRIX@@@Z 0040df90 f   d3d8:pusher.obj
+ 0002:00005740       ?InitializePushBuffer@CDevice@D3D@@QAEJXZ 0040e000 f   d3d8:pusher.obj
+ 0002:000057e0       ?UninitializePushBuffer@CDevice@D3D@@QAEXXZ 0040e0a0 f   d3d8:pusher.obj
+ 0002:00005910       ?GpuGet@CDevice@D3D@@QAEPCKXZ 0040e1d0 f   d3d8:pusher.obj
+ 0002:00005990       ?GpuGetOrNewer@D3D@@YGPCKPAVCDevice@1@H@Z 0040e250 f   d3d8:pusher.obj
+ 0002:00005a10       ?FlushWCCache@D3D@@YGXXZ   0040e2d0 f   d3d8:pusher.obj
+ 0002:00005a40       ?KickOff@CDevice@D3D@@QAEXXZ 0040e300 f   d3d8:pusher.obj
+ 0002:00005af0       ?ReentrantKickOffAndWait@CDevice@D3D@@QAEXXZ 0040e3b0 f   d3d8:pusher.obj
+ 0002:00005b60       ?SetFence@D3D@@YGKK@Z      0040e420 f   d3d8:pusher.obj
+ 0002:00005c20       ?BlockOnTime@D3D@@YGXKK@Z  0040e4e0 f   d3d8:pusher.obj
+ 0002:00005d90       ?MakeRequestedSpace@D3D@@YGPCKKK@Z 0040e650 f   d3d8:pusher.obj
+ 0002:00005ed0       _D3DDevice_MakeSpace@0     0040e790 f   d3d8:pusher.obj
+ 0002:00005ee0       _D3DDevice_BeginStateBig@4 0040e7a0 f   d3d8:pusher.obj
+ 0002:00005f30       ?KickOffAndWaitForIdle@D3D@@YGXXZ 0040e7f0 f   d3d8:pusher.obj
+ 0002:00005f50       ?BlockOnResource@D3D@@YGXPAUD3DResource@@@Z 0040e810 f   d3d8:pusher.obj
+ 0002:00005fd0       ?BlockOnNonSurfaceResource@D3D@@YGXPAUD3DResource@@@Z 0040e890 f   d3d8:pusher.obj
+ 0002:00006010       ?CleanPrivateData@D3D@@YGXPAX@Z 0040e8d0 f   d3d8:resource.obj
+ 0002:00006060       ?DestroyResource@D3D@@YGXPAUD3DResource@@@Z 0040e920 f   d3d8:resource.obj
+ 0002:00006100       ?IsResourceSetInDevice@D3D@@YGHPAUD3DResource@@@Z 0040e9c0 f   d3d8:resource.obj
+ 0002:00006140       ?InternalAddRefSurface@D3D@@YGXPAUD3DResource@@@Z 0040ea00 f   d3d8:resource.obj
+ 0002:00006180       _D3DResource_AddRef@4      0040ea40 f   d3d8:resource.obj
+ 0002:000061c0       _D3DResource_Release@4     0040ea80 f   d3d8:resource.obj
+ 0002:00006210       ?InternalReleaseSurface@D3D@@YGXPAUD3DResource@@@Z 0040ead0 f   d3d8:resource.obj
+ 0002:00006280       ?FloatToLong@D3D@@YGJM@Z   0040eb40 f   d3d8:floatmath.obj
+ 0002:00006290       ?Exp@D3D@@YGMM@Z           0040eb50 f   d3d8:floatmath.obj
+ 0002:000062f0       ?Log@D3D@@YGMM@Z           0040ebb0 f   d3d8:floatmath.obj
+ 0002:00006300       ?InitializeVertexShaderFromFvf@D3D@@YGXPAUVertexShader@1@K@Z 0040ebc0 f   d3d8:vshader.obj
+ 0002:00006440       ?ShadowVertexShaderState@D3D@@YGXPAUVertexShader@1@K@Z 0040ed00 f   d3d8:vshader.obj
+ 0002:000064f0       ?ParseProgram@D3D@@YGPCKPCKPBKK@Z 0040edb0 f   d3d8:vshader.obj
+ 0002:00006560       _D3DDevice_LoadVertexShader@8 0040ee20 f   d3d8:vshader.obj
+ 0002:000065c0       _D3DDevice_SelectVertexShader@8 0040ee80 f   d3d8:vshader.obj
+ 0002:00006660       _D3DDevice_SetShaderConstantMode@4 0040ef20 f   d3d8:vshader.obj
+ 0002:00006780       ?RestoreVertexShaders@D3D@@YGXPBKK@Z 0040f040 f   d3d8:vshader.obj
+ 0002:000067c0       ?CommonSetPassthroughProgram@D3D@@YIXPAVCDevice@1@@Z 0040f080 f   d3d8:vshader.obj
+ 0002:000068b0       _D3DDevice_SetVertexShader@4 0040f170 f   d3d8:vshader.obj
+ 0002:00006ac0       ?LazySetPointParams@D3D@@YGXPAVCDevice@1@@Z 0040f380 f   d3d8:lazy.obj
+ 0002:00006c30       ?LazySetShaderStageProgram@D3D@@YGXPAVCDevice@1@@Z 0040f4f0 f   d3d8:lazy.obj
+ 0002:00006fb0       ?LazySetTextureState@D3D@@YGXPAVCDevice@1@K@Z 0040f870 f   d3d8:lazy.obj
+ 0002:000071a0       ?LazySetSpecFogCombiner@D3D@@YGXPAVCDevice@1@@Z 0040fa60 f   d3d8:lazy.obj
+ 0002:00007380       ?LazySetTextureTransform@D3D@@YGXPAVCDevice@1@@Z 0040fc40 f   d3d8:lazy.obj
+ 0002:00007b30       ?LazySetLights@D3D@@YGXPAVCDevice@1@K@Z 004103f0 f   d3d8:lazy.obj
+ 0002:00007e80       ?LazySetTransform@D3D@@YGXPAVCDevice@1@K@Z 00410740 f   d3d8:lazy.obj
+ 0002:00008080       ?LazySetState@D3D@@YGXXZ   00410940 f   d3d8:lazy.obj
+ 0002:00008100       _D3DDevice_SetPixelShader@4 004109c0 f   d3d8:pshader.obj
+ 0002:00008300       _D3DDevice_SetVertexData2f@12 00410bc0 f   d3d8:drawprim.obj
+ 0002:00008340       _D3DDevice_Begin@4         00410c00 f   d3d8:drawprim.obj
+ 0002:00008380       _D3DDevice_End@0           00410c40 f   d3d8:drawprim.obj
+ 0002:000083d0       ?InitSurfaceHeader@D3D@@YGXIIW4_D3DFORMAT@@PAUD3DSurface@@II@Z 00410c90 f   d3d8:shadersnapshot.obj
+ 0002:00008420       ?HandleShaderSnapshotPreSwap@D3D@@YGXXZ 00410ce0 f   d3d8:shadersnapshot.obj
+ 0002:000084d0       ?HandleMovieFrameIdle@D3D@@YGXXZ 00410d90 f   d3d8:shadersnapshot.obj
+ 0002:00008850       ?HandleShaderSnapshotOpcode@D3D@@YGXXZ 00411110 f   d3d8:shadersnapshot.obj
+ 0002:00008dc0       ?Log2@D3D@@YIKK@Z          00411680 f   d3d8:pixeljar.obj
+ 0002:00008dd0       ?MapToLinearD3DFORMAT@D3D@@YG?AW4_D3DFORMAT@@W42@@Z 00411690 f   d3d8:pixeljar.obj
+ 0002:00008e90       ?VideoBitsPerPixelOfD3DFORMAT@D3D@@YGKW4_D3DFORMAT@@@Z 00411750 f   d3d8:pixeljar.obj
+ 0002:00008ec0       ?CalcTilePitch@D3D@@YGKKW4_D3DFORMAT@@@Z 00411780 f   d3d8:pixeljar.obj
+ 0002:00008f00       ?GetSurfaceFormat@PixelJar@D3D@@YGKPAUD3DPixelContainer@@0@Z 004117c0 f   d3d8:pixeljar.obj
+ 0002:00009020       ?GetDepthBufferScale@PixelJar@D3D@@YGXPAUD3DPixelContainer@@PAM@Z 004118e0 f   d3d8:pixeljar.obj
+ 0002:00009090       ?EncodeFormat@PixelJar@D3D@@YGKKKKKW4_D3DFORMAT@@KHHPAK1@Z 00411950 f   d3d8:pixeljar.obj
+ 0002:00009285       ?DacProgramVideoStart@CMiniport@D3D@@QAEXK@Z 00411b45 f   d3d8:mpdac.obj
+ 0002:00009307       ?DacProgramGammaRamp@CMiniport@D3D@@QAEXPAU_D3DGAMMARAMP@@@Z 00411bc7 f   d3d8:mpdac.obj
+ 0002:00009360       ?XformBy4x3@D3D@@YGXPAU_D3DVECTOR@@PBU2@MPBU_D3DMATRIX@@@Z 00411c20 f   d3d8:math.obj
+ 0002:000093c0       ?MatrixProduct4x4@D3D@@YGXPAU_D3DMATRIX@@PBU2@1@Z 00411c80 f   d3d8:math.obj
+ 0002:000094c0       ?Explut@D3D@@YGXMPAM0@Z    00411d80 f   d3d8:math.obj
+ 0002:00009590       ?JBInvSqrt@D3D@@YGMM@Z     00411e50 f   d3d8:math.obj
+ 0002:000095f0       ?NormalizeVector3@D3D@@YGXPAU_D3DVECTOR@@@Z 00411eb0 f   d3d8:math.obj
+ 0002:00009640       ?Inverse4x4@D3D@@YGHPAU_D3DMATRIX@@PBU2@H@Z 00411f00 f   d3d8:math.obj
+ 0002:00009b90       _D3DPalette_Lock2@8        00412450 f   d3d8:buffer.obj
+ 0002:00009bb0       _D3DPalette_GetSize@4      00412470 f   d3d8:buffer.obj
+ 0002:00009bc0       ?IsFlipPending@CMiniport@D3D@@QAEHXZ 00412480 f   d3d8:mpintr.obj
+ 0002:00009be0       ?GetTime@CMiniport@D3D@@QAEKXZ 004124a0 f i d3d8:mpintr.obj
+ 0002:00009bf0       ?Isr@CMiniport@D3D@@SGEPAU_KINTERRUPT@@PAX@Z 004124b0 f   d3d8:mpintr.obj
+ 0002:00009d10       ?ServiceQueuedFlips@CMiniport@D3D@@AAEKXZ 004125d0 f   d3d8:mpintr.obj
+ 0002:00009df0       ?VBlank@CMiniport@D3D@@AAEKXZ 004126b0 f   d3d8:mpintr.obj
+ 0002:00009f00       ?ServiceTimerInterrupt@CMiniport@D3D@@AAEKXZ 004127c0 f   d3d8:mpintr.obj
+ 0002:0000a030       ?ShutdownNotification@CMiniport@D3D@@SGXPAU_HAL_SHUTDOWN_REGISTRATION@@@Z 004128f0 f   d3d8:mpintr.obj
+ 0002:0000a0a0       ?ReportHardwareError@D3D@@YGXKKKK@Z 00412960 f   d3d8:mpintr.obj
+ 0002:0000a0f0       ?SoftwareMethod@CMiniport@D3D@@AAEXK@Z 004129b0 f   d3d8:mpintr.obj
+ 0002:0000a360       ?ServiceGrInterrupt@CMiniport@D3D@@AAEKXZ 00412c20 f   d3d8:mpintr.obj
+ 0002:0000a410       ?ServiceFifoInterrupt@CMiniport@D3D@@AAEKXZ 00412cd0 f   d3d8:mpintr.obj
+ 0002:0000a5a0       ?Dpc@CMiniport@D3D@@SGXPAU_KDPC@@PAX11@Z 00412e60 f   d3d8:mpintr.obj
+ 0002:0000a680       ?InitializeSurface@D3D@@YGXPAUD3DSurface@@KKPAX@Z 00412f40 f   d3d8:surface.obj
+ 0002:0000a6b0       ?HalMcControlInit@CMiniport@D3D@@AAEXXZ 00412f70 f   d3d8:mphal.obj
+ 0002:0000a817       ?HalFbControlInit@CMiniport@D3D@@AAEXXZ 004130d7 f   d3d8:mphal.obj
+ 0002:0000a915       ?HalDacControlInit@CMiniport@D3D@@AAEXXZ 004131d5 f   d3d8:mphal.obj
+ 0002:0000a9e4       ?HalVideoControlInit@CMiniport@D3D@@AAEXXZ 004132a4 f   d3d8:mphal.obj
+ 0002:0000aa1a       ?HalGrControlInit@CMiniport@D3D@@AAEXXZ 004132da f   d3d8:mphal.obj
+ 0002:0000aa4a       ?HalFifoControlInit@CMiniport@D3D@@AAEXXZ 0041330a f   d3d8:mphal.obj
+ 0002:0000aabb       ?HalGrIdle@CMiniport@D3D@@AAEXXZ 0041337b f   d3d8:mphal.obj
+ 0002:0000aafa       ?HalGrUnloadChannelContext@CMiniport@D3D@@AAEXK@Z 004133ba f   d3d8:mphal.obj
+ 0002:0000ab33       ?HalFifoContextSwitch@CMiniport@D3D@@AAEXK@Z 004133f3 f   d3d8:mphal.obj
+ 0002:0000ad30       ?HalDacLoad@CMiniport@D3D@@AAEXXZ 004135f0 f   d3d8:mphal.obj
+ 0002:0000ad42       ?HalFifoAllocDMA@CMiniport@D3D@@AAEXKKKPAUOBJECTINFO@12@@Z 00413602 f   d3d8:mphal.obj
+ 0002:0000aecf       ?HalFifoHashAdd@CMiniport@D3D@@AAEXKKKKK@Z 0041378f f   d3d8:mphal.obj
+ 0002:0000af08       ?HalGrInitObjectContext@CMiniport@D3D@@AAEXKK@Z 004137c8 f   d3d8:mphal.obj
+ 0002:0000af7d       ?HalGrInit3d@CMiniport@D3D@@AAEXXZ 0041383d f   d3d8:mphal.obj
+ 0002:0000b95c       ?HalGrLoadChannelContext@CMiniport@D3D@@AAEXK@Z 0041421c f   d3d8:mphal.obj
+ 0002:0000ba7f       ?HalFifoControlLoad@CMiniport@D3D@@AAEXXZ 0041433f f   d3d8:mphal.obj
+ 0002:0000bb00       ?HalGrControlLoad@CMiniport@D3D@@AAEXXZ 004143c0 f   d3d8:mphal.obj
+ 0002:0000be20       ?LazySetCombiners@D3D@@YGKPAVCDevice@1@K@Z 004146e0 f   d3d8:combiner.obj
+ 0002:0000c3e0       ?DBGPRINT@D3D@@YAXPADZZ    00414ca0 f   d3d8:debug.obj
+ 0002:0000c420       ?FixupPushBuffer@D3D@@YGXPAUPushBufferFixup@1@@Z 00414ce0 f   d3d8:pushres.obj
+ 0002:0000c4b8       ?g_TextureFormat@D3D@@3QBEB 00414d78     d3d8:enum.obj
+ 0002:0000c500       ?g_AntiAliasedTextureStates@D3D@@3QBKB 00414dc0     d3d8:present.obj
+ 0002:0000c558       ?g_AntiAliasedRenderStates@D3D@@3QBKB 00414e18     d3d8:present.obj
+ 0002:0000c5f8       ?g_PassthruProgramPositionAndTexture@D3D@@3QBKB 00414eb8     d3d8:present.obj
+ 0002:0000c618       ?g_MinFilter@D3D@@3QAY02$$CBKA 00414ed8     d3d8:precomp.obj
+ 0002:0000c630       ?g_TilePitches@D3D@@3QBKB  00414ef0     d3d8:precomp.obj
+ 0002:0000c698       ?g_IdentityMatrix@D3D@@3U_D3DMATRIX@@B 00414f58     d3d8:precomp.obj
+ 0002:0000c6d8       ?g_DisplayModes@D3D@@3QBUDISPLAYMODE@1@B 00414f98     d3d8:mpmode.obj
+ 0002:0000cf84       ?g_DefaultViewport@D3D@@3U_D3DVIEWPORT8@@B 00415844     d3d8:d3dbase.obj
+ 0002:0000cfb0       ?g_TransformDirtyTable@D3D@@3QBKB 00415870     d3d8:d3dbase.obj
+ 0002:0000cfd8       ?g_InitialTextureStates@D3D@@3QBEB 00415898     d3d8:dxgcreate.obj
+ 0002:0000cff8       ?g_InitialRenderStates@D3D@@3QBKB 004158b8     d3d8:dxgcreate.obj
+ 0002:0000d1ac       ?g_LODBias2x@D3D@@3QBMB    00415a6c     d3d8:state.obj
+ 0002:0000d1c8       ?g_ComplexRenderStateFunctionTable@D3D@@3QBQ6GXK@ZB 00415a88     d3d8:state.obj
+ 0002:0000d244       ?g_FixedFunctionPipelineConstants@D3D@@3QBKB 00415b04     d3d8:vshader.obj
+ 0002:0000d278       ?g_PassthruProgramWFog@D3D@@3QBKB 00415b38     d3d8:vshader.obj
+ 0002:0000d338       ?g_PassthruProgramZFog@D3D@@3QBKB 00415bf8     d3d8:vshader.obj
+ 0002:0000d3e8       ?g_PassthruProgramSpecularFog@D3D@@3QBKB 00415ca8     d3d8:vshader.obj
+ 0002:0000d4a8       ?g_TextureCount@D3D@@3QBKB 00415d68     d3d8:vshader.obj
+ 0002:0000d4c0       ??_C@_0CA@GJMEKBLB@Wait?5for?5image?5write?5timed?9out?6?$AA@ 00415d80     d3d8:shadersnapshot.obj
+ 0002:0000d4e0       ??_C@_0BP@BPOFKPAI@Wait?5for?5image?5read?5timed?9out?6?$AA@ 00415da0     d3d8:shadersnapshot.obj
+ 0002:0000d500       ??_C@_0DB@PLEMIDFP@Unable?5to?5re?9open?5movie?5cache?5fi@ 00415dc0     d3d8:shadersnapshot.obj
+ 0002:0000d534       ??_C@_05CCMOGDN@?$CFs?3?$CFs?$AA@ 00415df4     d3d8:shadersnapshot.obj
+ 0002:0000d53c       ??_C@_0M@EKAMBPKE@1?400?45849?41?$AA@ 00415dfc     d3d8:shadersnapshot.obj
+ 0002:0000d548       ??_C@_07LHBDFJPO@Release?$AA@ 00415e08     d3d8:shadersnapshot.obj
+ 0002:0000d550       ??_C@_0BM@PMANFOOE@createfile?5error?5?9?5st?$DN?$CF08x?6?$AA@ 00415e10     d3d8:shadersnapshot.obj
+ 0002:0000d56c       ??_C@_0CF@JAIFDFBO@GetDiskFreeSpaceEx?5failed?5with?5?$CF@ 00415e2c     d3d8:shadersnapshot.obj
+ 0002:0000d594       ??_C@_02HGOPDIBI@t?3?$AA@  00415e54     d3d8:shadersnapshot.obj
+ 0002:0000d5a0       ?g_Mar@D3D@@3QBMB          00415e60     d3d8:math.obj
+ 0002:0000d620       ?g_Lar@D3D@@3QBMB          00415ee0     d3d8:math.obj
+ 0002:0000d6a0       ??_C@_0ED@CEHICPLJ@?5?5?5Type?3?5?$CFi?6?5Source?3?5?$CF08x?6?5?5Clas@ 00415f60     d3d8:mpintr.obj
+ 0002:0000d6e4       ??_C@_01EEMJAFIK@?6?$AA@   00415fa4     d3d8:mpintr.obj
+ 0002:0000d6e8       ??_C@_0FL@LBCDANFN@GPU?5generated?5an?5error?$CB?6Try?5repr@ 00415fa8     d3d8:mpintr.obj
+ 0002:0000d838       ??_C@_09FBGPICKC@CopyRects?$AA@ 004160f8     d3d8:pushres.obj
+ 0002:0000d844       ??_C@_0BC@JNDDCMEE@EndVisibilityTest?$AA@ 00416104     d3d8:pushres.obj
+ 0002:0000d858       ??_C@_0L@BGIJEDPF@SetPalette?$AA@ 00416118     d3d8:pushres.obj
+ 0002:0000d864       ??_C@_0L@BPHKIMHE@SetTexture?$AA@ 00416124     d3d8:pushres.obj
+ 0002:0000d870       ??_C@_0BF@MPBJCMNM@SetVertexShaderInput?$AA@ 00416130     d3d8:pushres.obj
+ 0002:0000d888       ??_C@_0BA@LPDJAFGN@SetRenderTarget?$AA@ 00416148     d3d8:pushres.obj
+ 0002:0000d8a0       ?g_OverscanColor@D3D@@3KA  00416160     d3d8:d3dbase.obj
+ 0002:0000d8a4       ?g_SoftDisplayFilterValue@D3D@@3HA 00416164     d3d8:d3dbase.obj
+ 0002:0000d8a8       ?g_FlickerFilterValue@D3D@@3KA 00416168     d3d8:d3dbase.obj
+ 0002:0000d8ac       ?g_SoftDisplayFilterSet@D3D@@3HA 0041616c     d3d8:d3dbase.obj
+ 0002:0000d8b0       ?g_FlickerFilterSet@D3D@@3HA 00416170     d3d8:d3dbase.obj
+ 0002:0000d8c0       ?g_VertexShaderConstants@@3PAY03MA 00416180     d3d8:globals.obj
+ 0002:0000e4c0       ?g_NullHardwareGetPut@@3PAKA 00416d80     d3d8:globals.obj
+ 0002:0000e4c8       _D3D__AvInfo               00416d88     d3d8:globals.obj
+ 0002:0000e4cc       _D3D__GpuReg               00416d8c     d3d8:globals.obj
+ 0002:0000e4d0       _D3D__NullHardware         00416d90     d3d8:globals.obj
+ 0002:0000e4d4       _D3D__IndexData            00416d94     d3d8:globals.obj
+ 0002:0000e4d8       _D3D__DirtyFlags           00416d98     d3d8:globals.obj
+ 0002:0000e4e0       _D3D__TextureState         00416da0     d3d8:globals.obj
+ 0002:0000e6e0       _D3D__RenderState          00416fa0     d3d8:globals.obj
+ 0002:0000e978       _D3D__pDevice              00417238     d3d8:globals.obj
+ 0002:0000e980       _D3D__Device               00417240     d3d8:globals.obj
+ 0002:00010e20       ?m_PushSegmentSize@CDevice@D3D@@2KA 004196e0     d3d8:dxgcreate.obj
+ 0002:00010e24       ?m_PushBufferSize@CDevice@D3D@@2KA 004196e4     d3d8:dxgcreate.obj
+ 0002:00010e30       ?g_Stream@D3D@@3PAUStream@1@A 004196f0     d3d8:vshader.obj
+ 0002:00010ef0       ?g_DirectVertexShader@D3D@@3UVertexShader@1@A 004197b0     d3d8:vshader.obj
+ 0002:00011008       ?g_FvfVertexShader@D3D@@3UVertexShader@1@A 004198c8     d3d8:vshader.obj
+ 0002:00011160       ?g_VideoOffset@D3D@@3KA    00419a20     d3d8:mpintr.obj
+ 0002:00011164       ?g_pFixup@D3D@@3PAUD3DFixup@@A 00419a24     d3d8:pushres.obj
+ 0003:00000000       __imp__NtClose@4           00419a40     xboxkrnl:xboxkrnl.exe
+ 0003:00000004       __imp__NtQueryVolumeInformationFile@20 00419a44     xboxkrnl:xboxkrnl.exe
+ 0003:00000008       __imp__NtOpenFile@24       00419a48     xboxkrnl:xboxkrnl.exe
+ 0003:0000000c       __imp__NtWriteFile@32      00419a4c     xboxkrnl:xboxkrnl.exe
+ 0003:00000010       __imp__NtQueryInformationFile@20 00419a50     xboxkrnl:xboxkrnl.exe
+ 0003:00000014       __imp__NtCreateFile@36     00419a54     xboxkrnl:xboxkrnl.exe
+ 0003:00000018       __imp__RtlInitAnsiString@8 00419a58     xboxkrnl:xboxkrnl.exe
+ 0003:0000001c       __imp__IoCreateSymbolicLink@8 00419a5c     xboxkrnl:xboxkrnl.exe
+ 0003:00000020       __imp__NtSetInformationFile@20 00419a60     xboxkrnl:xboxkrnl.exe
+ 0003:00000024       __imp__KeQuerySystemTime@4 00419a64     xboxkrnl:xboxkrnl.exe
+ 0003:00000028       __imp__HalReturnToFirmware@4 00419a68     xboxkrnl:xboxkrnl.exe
+ 0003:0000002c       __imp__MmFreeContiguousMemory@4 00419a6c     xboxkrnl:xboxkrnl.exe
+ 0003:00000030       _LaunchDataPage            00419a70     xboxkrnl:xboxkrnl.exe
+ 0003:00000030       __imp__LaunchDataPage      00419a70     xboxkrnl:xboxkrnl.exe
+ 0003:00000034       _XboxHardwareInfo          00419a74     xboxkrnl:xboxkrnl.exe
+ 0003:00000034       __imp__XboxHardwareInfo    00419a74     xboxkrnl:xboxkrnl.exe
+ 0003:00000038       __imp__HalRegisterShutdownNotification@8 00419a78     xboxkrnl:xboxkrnl.exe
+ 0003:0000003c       __imp__RtlNtStatusToDosError@4 00419a7c     xboxkrnl:xboxkrnl.exe
+ 0003:00000040       __imp__MmSetAddressProtect@12 00419a80     xboxkrnl:xboxkrnl.exe
+ 0003:00000044       __imp__MmQueryAddressProtect@4 00419a84     xboxkrnl:xboxkrnl.exe
+ 0003:00000048       __imp__XboxKrnlVersion     00419a88     xboxkrnl:xboxkrnl.exe
+ 0003:00000048       _XboxKrnlVersion           00419a88     xboxkrnl:xboxkrnl.exe
+ 0003:0000004c       __imp__RtlLeaveCriticalSection@4 00419a8c     xboxkrnl:xboxkrnl.exe
+ 0003:00000050       __imp__RtlEnterCriticalSection@4 00419a90     xboxkrnl:xboxkrnl.exe
+ 0003:00000054       __imp__RtlRaiseException@4 00419a94     xboxkrnl:xboxkrnl.exe
+ 0003:00000058       __imp__PsTerminateSystemThread@4 00419a98     xboxkrnl:xboxkrnl.exe
+ 0003:0000005c       __imp__PsCreateSystemThreadEx@40 00419a9c     xboxkrnl:xboxkrnl.exe
+ 0003:00000060       __imp__RtlEqualString@12   00419aa0     xboxkrnl:xboxkrnl.exe
+ 0003:00000064       __imp__XeLoadSection@4     00419aa4     xboxkrnl:xboxkrnl.exe
+ 0003:00000068       __imp__XeUnloadSection@4   00419aa8     xboxkrnl:xboxkrnl.exe
+ 0003:0000006c       __imp__MmPersistContiguousMemory@12 00419aac     xboxkrnl:xboxkrnl.exe
+ 0003:00000070       __imp__MmAllocateContiguousMemory@4 00419ab0     xboxkrnl:xboxkrnl.exe
+ 0003:00000074       __imp__IoDeleteSymbolicLink@4 00419ab4     xboxkrnl:xboxkrnl.exe
+ 0003:00000078       __imp__NtQuerySymbolicLinkObject@12 00419ab8     xboxkrnl:xboxkrnl.exe
+ 0003:0000007c       __imp__NtOpenSymbolicLinkObject@8 00419abc     xboxkrnl:xboxkrnl.exe
+ 0003:00000080       __imp__XcSHAFinal@8        00419ac0     xboxkrnl:xboxkrnl.exe
+ 0003:00000084       __imp__XcSHAUpdate@12      00419ac4     xboxkrnl:xboxkrnl.exe
+ 0003:00000088       __imp__XcSHAInit@4         00419ac8     xboxkrnl:xboxkrnl.exe
+ 0003:0000008c       __imp__XeImageFileName     00419acc     xboxkrnl:xboxkrnl.exe
+ 0003:0000008c       _XeImageFileName           00419acc     xboxkrnl:xboxkrnl.exe
+ 0003:00000090       __imp__ExQueryNonVolatileSetting@20 00419ad0     xboxkrnl:xboxkrnl.exe
+ 0003:00000094       __imp__HalDiskCachePartitionCount 00419ad4     xboxkrnl:xboxkrnl.exe
+ 0003:00000094       _HalDiskCachePartitionCount 00419ad4     xboxkrnl:xboxkrnl.exe
+ 0003:00000098       __imp__NtReadFile@32       00419ad8     xboxkrnl:xboxkrnl.exe
+ 0003:0000009c       __imp__NtFsControlFile@40  00419adc     xboxkrnl:xboxkrnl.exe
+ 0003:000000a0       __imp__NtFreeVirtualMemory@12 00419ae0     xboxkrnl:xboxkrnl.exe
+ 0003:000000a4       __imp__NtAllocateVirtualMemory@20 00419ae4     xboxkrnl:xboxkrnl.exe
+ 0003:000000a8       __imp__RtlCompareMemoryUlong@12 00419ae8     xboxkrnl:xboxkrnl.exe
+ 0003:000000ac       __imp__RtlInitializeCriticalSection@4 00419aec     xboxkrnl:xboxkrnl.exe
+ 0003:000000b0       __imp__NtQueryVirtualMemory@8 00419af0     xboxkrnl:xboxkrnl.exe
+ 0003:000000b4       __imp__KeSetTimer@16       00419af4     xboxkrnl:xboxkrnl.exe
+ 0003:000000b8       __imp_@KfLowerIrql@4       00419af8     xboxkrnl:xboxkrnl.exe
+ 0003:000000bc       __imp__KeRaiseIrqlToDpcLevel@0 00419afc     xboxkrnl:xboxkrnl.exe
+ 0003:000000c0       __imp__HalInitiateShutdown@0 00419b00     xboxkrnl:xboxkrnl.exe
+ 0003:000000c4       __imp__KeInitializeTimerEx@8 00419b04     xboxkrnl:xboxkrnl.exe
+ 0003:000000c8       __imp__KeInitializeDpc@12  00419b08     xboxkrnl:xboxkrnl.exe
+ 0003:000000cc       __imp__KeSetEvent@12       00419b0c     xboxkrnl:xboxkrnl.exe
+ 0003:000000d0       __imp__IdexChannelObject   00419b10     xboxkrnl:xboxkrnl.exe
+ 0003:000000d0       _IdexChannelObject         00419b10     xboxkrnl:xboxkrnl.exe
+ 0003:000000d4       __imp__KeWaitForSingleObject@20 00419b14     xboxkrnl:xboxkrnl.exe
+ 0003:000000d8       __imp__NtWaitForSingleObjectEx@16 00419b18     xboxkrnl:xboxkrnl.exe
+ 0003:000000dc       __imp__KeDelayExecutionThread@12 00419b1c     xboxkrnl:xboxkrnl.exe
+ 0003:000000e0       __imp__NtWaitForSingleObject@12 00419b20     xboxkrnl:xboxkrnl.exe
+ 0003:000000e4       __imp__NtFlushBuffersFile@8 00419b24     xboxkrnl:xboxkrnl.exe
+ 0003:000000e8       __imp__NtDeviceIoControlFile@40 00419b28     xboxkrnl:xboxkrnl.exe
+ 0003:000000ec       __imp__XcHMAC@28           00419b2c     xboxkrnl:xboxkrnl.exe
+ 0003:000000f0       _XboxHDKey                 00419b30     xboxkrnl:xboxkrnl.exe
+ 0003:000000f0       __imp__XboxHDKey           00419b30     xboxkrnl:xboxkrnl.exe
+ 0003:000000f4       __imp__MmAllocateContiguousMemoryEx@20 00419b34     xboxkrnl:xboxkrnl.exe
+ 0003:000000f8       __imp__MmQueryAllocationSize@4 00419b38     xboxkrnl:xboxkrnl.exe
+ 0003:000000fc       __imp__AvSetSavedDataAddress@4 00419b3c     xboxkrnl:xboxkrnl.exe
+ 0003:00000100       __imp__AvGetSavedDataAddress@0 00419b40     xboxkrnl:xboxkrnl.exe
+ 0003:00000104       __imp__AvSendTVEncoderOption@16 00419b44     xboxkrnl:xboxkrnl.exe
+ 0003:00000108       __imp__AvSetDisplayMode@24 00419b48     xboxkrnl:xboxkrnl.exe
+ 0003:0000010c       __imp__HalReadWritePCISpace@24 00419b4c     xboxkrnl:xboxkrnl.exe
+ 0003:00000110       __imp__KeConnectInterrupt@4 00419b50     xboxkrnl:xboxkrnl.exe
+ 0003:00000114       __imp__KeInitializeInterrupt@28 00419b54     xboxkrnl:xboxkrnl.exe
+ 0003:00000118       __imp__HalGetInterruptVector@8 00419b58     xboxkrnl:xboxkrnl.exe
+ 0003:0000011c       __imp__KeDisconnectInterrupt@4 00419b5c     xboxkrnl:xboxkrnl.exe
+ 0003:00000120       __imp__KeInsertQueueDpc@12 00419b60     xboxkrnl:xboxkrnl.exe
+ 0003:00000124       __imp__MmClaimGpuInstanceMemory@8 00419b64     xboxkrnl:xboxkrnl.exe
+ 0003:00000128       __imp__DbgPrint            00419b68     xboxkrnl:xboxkrnl.exe
+ 0003:0000012c       __imp__RtlUnwind@16        00419b6c     xboxkrnl:xboxkrnl.exe
+ 0003:00000130       __imp__KeBugCheck@4        00419b70     xboxkrnl:xboxkrnl.exe
+ 0003:00000134       \177xboxkrnl_NULL_THUNK_DATA 00419b74     xboxkrnl:xboxkrnl.exe
+ 0003:00000160       _D3DDIRTYFROMTEXTURESTATE  00419ba0     CreateDevice.obj
+ 0003:000001b8       _D3DDIRTYFROMRENDERSTATE   00419bf8     CreateDevice.obj
+ 0003:00000268       _D3DSIMPLERENDERSTATEENCODE 00419ca8     CreateDevice.obj
+ 0003:000003d8       __real@3fc00000            00419e18     CreateDevice.obj
+ 0003:000003dc       __real@3fd9999a            00419e1c     CreateDevice.obj
+ 0003:000003e0       __real@00000000            00419e20     CreateDevice.obj
+ 0003:000003e4       __real@437f0000            00419e24     CreateDevice.obj
+ 0003:000003e8       __real@3fa66666            00419e28     CreateDevice.obj
+ 0003:000003ec       ??_C@_0CD@LFDIGKDL@?2Device?2Harddisk0?2partition1?2UDA@ 00419e2c     xapilib:xapiinit.obj
+ 0003:00000410       ??_C@_06JOLOLLFF@?2?$DP?$DP?2U?3?$AA@ 00419e50     xapilib:xapiinit.obj
+ 0003:00000418       ??_C@_0CD@HOGELJJO@?2Device?2Harddisk0?2partition1?2TDA@ 00419e58     xapilib:xapiinit.obj
+ 0003:0000043c       ??_C@_06JPHMNBGC@?2?$DP?$DP?2T?3?$AA@ 00419e7c     xapilib:xapiinit.obj
+ 0003:00000444       ??_C@_0BO@GJJLMLHN@?2Device?2Harddisk0?2partition1?2?$AA@ 00419e84     xapilib:xapiinit.obj
+ 0003:00000464       ??_C@_0P@DOJDIGAH@?2Device?2CdRom0?$AA@ 00419ea4     xapilib:xapiinit.obj
+ 0003:00000474       ??_C@_06IDFKHCBC@?2?$DP?$DP?2D?3?$AA@ 00419eb4     xapilib:xapiinit.obj
+ 0003:0000055c       ??_C@_1CA@NCOAEKIF@?$AA?$CF?$AAl?$AAc?$AA?$CF?$AAl?$AAs?$AA?$CF?$AAl?$AAc?$AA?$CF?$AAl?$AAs?$AA?$CF?$AAl?$AAs?$AA?$AA@ 00419f9c     xapilib:xapiinit.obj
+ 0003:0000057c       ??_C@_09ECGHCENE@$$XSIMAGE?$AA@ 00419fbc     xapilib:xapiinit.obj
+ 0003:00000588       ??_C@_09IHMABKFK@$$XTIMAGE?$AA@ 00419fc8     xapilib:xapiinit.obj
+ 0003:00000594       ??_C@_08BBCMAOON@$$XTINFO?$AA@ 00419fd4     xapilib:xapiinit.obj
+ 0003:000005a0       ??_C@_05CLMJGDKL@?$CF08lx?$AA@ 00419fe0     xapilib:xapiinit.obj
+ 0003:000005a8       __tls_used                 00419fe8     xapilib:xapitls.obj
+ 0003:000005f8       ??_C@_06JHKEECDB@?2?$DP?$DP?2Y?3?$AA@ 0041a038     xapilib:bootutil.obj
+ 0003:00000600       ??_C@_08FCIBIDEF@t?3?2$u?2?$CFs?$AA@ 0041a040     xapilib:bootutil.obj
+ 0003:0000060c       ??_C@_0P@PPFCKJAD@?2Device?2Cdrom0?$AA@ 0041a04c     xapilib:bootutil.obj
+ 0003:0000061c       ??_C@_0BA@PHOGFBJD@contentmeta?4xbx?$AA@ 0041a05c     xapilib:bootutil.obj
+ 0003:0000062c       ??_C@_04HDOCAJNK@?$CFs?$CFs?$AA@ 0041a06c     xapilib:bootutil.obj
+ 0003:00000634       ??_C@_06EJNCFCDC@t?3?2$u?2?$AA@ 0041a074     xapilib:bootutil.obj
+ 0003:0000074c       _XapiHardDisk              0041a18c     xapilib:pathmisc.obj
+ 0003:00000754       ??_C@_0BN@OGMPKPAN@?2Device?2Harddisk0?2partition0?$AA@ 0041a194     xapilib:pathmisc.obj
+ 0003:00000774       ??_C@_06JGGGCIAG@?2?$DP?$DP?2X?3?$AA@ 0041a1b4     xapilib:pathmisc.obj
+ 0003:0000077c       ??_C@_06JNDKGPDL@?2?$DP?$DP?2W?3?$AA@ 0041a1bc     xapilib:pathmisc.obj
+ 0003:00000784       ??_C@_06IOMNPHME@?2?$DP?$DP?2N?3?$AA@ 0041a1c4     xapilib:pathmisc.obj
+ 0003:0000078c       ??_C@_06JFOCPMGI@?2?$DP?$DP?2Z?3?$AA@ 0041a1cc     xapilib:pathmisc.obj
+ 0003:000008a4       _XapipContentDirectoryTemplate 0041a2e4     xapilib:contsig.obj
+ 0003:000008b4       __real@3f000000            0041a2f4     d3d8:present.obj
+ 0003:000008b8       __real@40800000            0041a2f8     d3d8:present.obj
+ 0003:000008bc       __real@4f800000            0041a2fc     d3d8:present.obj
+ 0003:000008c0       __real@40000000            0041a300     d3d8:present.obj
+ 0003:000008c4       __real@3f800000            0041a304     d3d8:present.obj
+ 0003:000008c8       __real@46293e5939a08cea    0041a308     d3d8:clear.obj
+ 0003:000008d0       __real@407fff0000000000    0041a310     d3d8:clear.obj
+ 0003:000008d8       __real@4b7fffff            0041a318     d3d8:clear.obj
+ 0003:000008dc       __real@477fff00            0041a31c     d3d8:clear.obj
+ 0003:000008e0       __real@bf000000            0041a320     d3d8:state.obj
+ 0003:000008e4       __real@41000000            0041a324     d3d8:state.obj
+ 0003:000008e8       __real@3e800000            0041a328     d3d8:state.obj
+ 0003:000008ec       __real@43800000            0041a32c     d3d8:lazy.obj
+ 0003:000008f0       __real@be596d0b            0041a330     d3d8:lazy.obj
+ 0003:000008f4       __real@bdb8aa0a            0041a334     d3d8:lazy.obj
+ 0003:000008f8       __real@3b808081            0041a338     d3d8:lazy.obj
+ 0003:000008fc       __real@408a7fac            0041a33c     d3d8:math.obj
+ 0003:00000900       __real@c0851592            0041a340     d3d8:math.obj
+ 0003:00000904       __real@40400000            0041a344     d3d8:math.obj
+ 0003:00000908       __real@0000000000000000    0041a348     LIBC:cvt.obj
+ 0003:00000910       ??_C@_05KLBDPFGC@e?$CL000?$AA@ 0041a350     LIBC:cvt.obj
+ 0003:00000918       ___lookuptable             0041a358     LIBC:output.obj
+ 0003:00000974       ___nullstring              0041a3b4     LIBC:output.obj
+ 0003:0000097c       ___wnullstring             0041a3bc     LIBC:output.obj
+ 0003:00000990       ___newctype                0041a3d0     LIBC:ctype.obj
+ 0003:00000c90       __wctype                   0041a6d0     LIBC:ctype.obj
+ 0003:00000e94       ??_C@_06IMKFLFPG@1?$CDQNAN?$AA@ 0041a8d4     LIBC:x10fout.obj
+ 0003:00000e9c       ??_C@_05DNEBIAHO@1?$CDINF?$AA@ 0041a8dc     LIBC:x10fout.obj
+ 0003:00000ea4       ??_C@_05PHHOCPM@1?$CDIND?$AA@ 0041a8e4     LIBC:x10fout.obj
+ 0003:00000eac       ??_C@_06PGGFOGJG@1?$CDSNAN?$AA@ 0041a8ec     LIBC:x10fout.obj
+ 0003:00000eb4       ??_C@_0P@GGKDKEEG@runtime?5error?5?$AA@ 0041a8f4     LIBC:crt0msg.obj
+ 0003:00000ec4       ??_C@_0N@HLECBOKK@TLOSS?5error?6?$AA@ 0041a904     LIBC:crt0msg.obj
+ 0003:00000ed4       ??_C@_0M@HDJFGCEL@SING?5error?6?$AA@ 0041a914     LIBC:crt0msg.obj
+ 0003:00000ee0       ??_C@_0O@KIGJDBC@DOMAIN?5error?6?$AA@ 0041a920     LIBC:crt0msg.obj
+ 0003:00000ef0       ??_C@_0KA@LCBCGMCJ@R6029?6?9?5This?5application?5cannot?5@ 0041a930     LIBC:crt0msg.obj
+ 0003:00000f90       ??_C@_0CD@CBIHNGLM@R6028?6?9?5unable?5to?5initialize?5hea@ 0041a9d0     LIBC:crt0msg.obj
+ 0003:00000fb4       ??_C@_0DD@ELMNFFL@R6027?6?9?5not?5enough?5space?5for?5low@ 0041a9f4     LIBC:crt0msg.obj
+ 0003:00000fe8       ??_C@_0DD@ECMPPDKJ@R6026?6?9?5not?5enough?5space?5for?5std@ 0041aa28     LIBC:crt0msg.obj
+ 0003:0000101c       ??_C@_0CE@BNOBCALH@R6025?6?9?5pure?5virtual?5function?5ca@ 0041aa5c     LIBC:crt0msg.obj
+ 0003:00001040       ??_C@_0DD@KDOBPJEN@R6024?6?9?5not?5enough?5space?5for?5_on@ 0041aa80     LIBC:crt0msg.obj
+ 0003:00001074       ??_C@_0CH@IJNGNKLN@R6019?6?9?5unable?5to?5open?5console?5d@ 0041aab4     LIBC:crt0msg.obj
+ 0003:0000109c       ??_C@_0BP@BHAKIOHE@R6018?6?9?5unexpected?5heap?5error?6?$AA@ 0041aadc     LIBC:crt0msg.obj
+ 0003:000010bc       ??_C@_0CL@LODECPDF@R6017?6?9?5unexpected?5multithread?5l@ 0041aafc     LIBC:crt0msg.obj
+ 0003:000010e8       ??_C@_0CK@NONBIDPM@R6016?6?9?5not?5enough?5space?5for?5thr@ 0041ab28     LIBC:crt0msg.obj
+ 0003:00001118       ??_C@_0JE@GCAJEKJH@?6This?5application?5has?5requested?5@ 0041ab58     LIBC:crt0msg.obj
+ 0003:000011ac       ??_C@_0CK@DGPNILPC@R6009?6?9?5not?5enough?5space?5for?5env@ 0041abec     LIBC:crt0msg.obj
+ 0003:000011d8       ??_C@_0CI@MOMFHLKF@R6008?6?9?5not?5enough?5space?5for?5arg@ 0041ac18     LIBC:crt0msg.obj
+ 0003:00001200       ??_C@_0CD@IEKHEPMF@R6002?6?9?5floating?5point?5not?5loade@ 0041ac40     LIBC:crt0msg.obj
+ 0004:00000000       ___xri_a                   0041ad00     xapilib:xapi0dat.obj
+ 0004:00000008       ___xri_z                   0041ad08     xapilib:xapi0dat.obj
+ 0004:0000000c       ___xc_a                    0041ad0c     xapilib:xapi0dat.obj
+ 0004:00000010       ___xc_z                    0041ad10     xapilib:xapi0dat.obj
+ 0004:00000014       ___xi_a                    0041ad14     xapilib:xapi0dat.obj
+ 0004:0000001c       ___xi_z                    0041ad1c     xapilib:xapi0dat.obj
+ 0004:00000020       ___xp_a                    0041ad20     LIBC:crt0init.obj
+ 0004:00000028       ___xp_z                    0041ad28     LIBC:crt0init.obj
+ 0004:0000002c       ___xt_a                    0041ad2c     LIBC:crt0init.obj
+ 0004:00000030       ___xt_z                    0041ad30     LIBC:crt0init.obj
+ 0004:00000040       _DDrive                    0041ad40     xapilib:xapiinit.obj
+ 0004:00000048       _CdDevice                  0041ad48     xapilib:xapiinit.obj
+ 0004:00000050       _MainVol                   0041ad50     xapilib:xapiinit.obj
+ 0004:00000058       _TDrive                    0041ad58     xapilib:xapiinit.obj
+ 0004:00000060       _TitleData                 0041ad60     xapilib:xapiinit.obj
+ 0004:00000068       _UDrive                    0041ad68     xapilib:xapiinit.obj
+ 0004:00000070       _UserData                  0041ad70     xapilib:xapiinit.obj
+ 0004:00000078       _XapiProcessLock           0041ad78     xapilib:thread.obj
+ 0004:00000094       _XapiThreadNotifyRoutineList 0041ad94     xapilib:thread.obj
+ 0004:0000009c       _DashPartition             0041ad9c     xapilib:bootutil.obj
+ 0004:000000bc       _TitleRebootPath           0041adbc     xapilib:bootutil.obj
+ 0004:000000ec       _YDrive                    0041adec     xapilib:bootutil.obj
+ 0004:00000104       _g_iZDriveDBIndex          0041ae04     xapilib:pathmisc.obj
+ 0004:00000108       _g_iNDriveDBIndex          0041ae08     xapilib:pathmisc.obj
+ 0004:0000010c       _MmHeapSegmentReserve      0041ae0c     xapilib:heap.obj
+ 0004:00000110       _MmHeapSegmentCommit       0041ae10     xapilib:heap.obj
+ 0004:00000114       _MmHeapDeCommitTotalFreeThreshold 0041ae14     xapilib:heap.obj
+ 0004:00000118       _MmHeapDeCommitFreeBlockThreshold 0041ae18     xapilib:heap.obj
+ 0004:0000011c       _XapiShutdownRegistration  0041ae1c     xapilib:xapiterm.obj
+ 0004:0000012c       _XapiShutdownIrpCompleteEvent 0041ae2c     xapilib:xapiterm.obj
+ 0004:00000140       _g_rgdwLoc                 0041ae40     xapilib:compstra.obj
+ 0004:000005b8       ?g_SlotMapping@D3D@@3PAEA  0041b2b8     d3d8:state.obj
+ 0004:00000640       ?ostMovieBuffer@D3D@@3PADA 0041b340     d3d8:shadersnapshot.obj
+ 0004:00000670       ?ostMovie@D3D@@3U_STRING@@A 0041b370     d3d8:shadersnapshot.obj
+ 0004:00000680       __fltused                  0041b380     LIBC:fpinit.obj
+ 0004:00000684       __ldused                   0041b384     LIBC:fpinit.obj
+ 0004:00000688       __FPinit                   0041b388     LIBC:fpinit.obj
+ 0004:0000068c       __FPmtinit                 0041b38c     LIBC:fpinit.obj
+ 0004:00000690       __FPmtterm                 0041b390     LIBC:fpinit.obj
+ 0004:000006a0       __NLG_Destination          0041b3a0     LIBC:exsup.obj
+ 0004:000006b0       __cfltcvt_tab              0041b3b0     LIBC:cmiscdat.obj
+ 0004:000006d0       ___lc_clike                0041b3d0     LIBC:nlsdata2.obj
+ 0004:000006e0       ___mb_cur_max              0041b3e0     LIBC:nlsdata1.obj
+ 0004:000006e4       ___decimal_point           0041b3e4     LIBC:nlsdata1.obj
+ 0004:000006e8       ___decimal_point_length    0041b3e8     LIBC:nlsdata1.obj
+ 0004:000006ec       __pctype                   0041b3ec     LIBC:ctype.obj
+ 0004:000006f0       __pwctype                  0041b3f0     LIBC:ctype.obj
+ 0004:00000724       ___badioinfo               0041b424     LIBC:ioinit.obj
+ 0004:00000730       __iob                      0041b430     LIBC:_file.obj
+ 0004:000009b0       __aexit_rtn                0041b6b0     LIBC:crt0.obj
+ 0004:000009b8       __XcptActTab               0041b6b8     LIBC:winxfltr.obj
+ 0004:00000a30       __First_FPE_Indx           0041b730     LIBC:winxfltr.obj
+ 0004:00000a34       __Num_FPE                  0041b734     LIBC:winxfltr.obj
+ 0004:00000a38       __XcptActTabCount          0041b738     LIBC:winxfltr.obj
+ 0004:00000a3c       __fpecode                  0041b73c     LIBC:winxfltr.obj
+ 0004:00000ba8       __amblksiz                 0041b8a8     LIBC:heapinit.obj
+ 0004:00000c48       __pow10pos                 0041b948     LIBC:constpow.obj
+ 0004:00000da8       __pow10neg                 0041baa8     LIBC:constpow.obj
+ 0004:00000f20       ?g_pD3D@@3PAUDirect3D@@A   0041bc20     CreateDevice.obj
+ 0004:00000f24       ?g_pd3dDevice@@3PAUD3DDevice@@A 0041bc24     CreateDevice.obj
+ 0004:00000f34       __tls_index                0041bc34     xapilib:xapitls.obj
+ 0004:00000f38       _XapiMuInfo                0041bc38     xapilib:pathmisc.obj
+ 0004:00000f40       _g_pfnxcsbOnline           0041bc40     xapilib:xcalcsig.obj
+ 0004:00000f44       _g_pfnxcsuOnline           0041bc44     xapilib:xcalcsig.obj
+ 0004:00000f48       _g_pfnxcseOnline           0041bc48     xapilib:xcalcsig.obj
+ 0004:00000f4c       ___@@_PchSym_@00@UcylcuivRwvxADUkirezgvUdrmwldhUwrivxgcUwctUwDwIUhvUfhviUlyqUrDIGUkivxlnkOlyq@d3d8 0041bc4c     d3d8:precomp.obj
+ 0004:00000f60       ___fastflag                0041bc60     LIBC:fpinit.obj
+ 0004:00000f64       __adjust_fdiv              0041bc64     LIBC:fpinit.obj
+ 0004:00000f78       ___lc_handle               0041bc78     LIBC:nlsdata2.obj
+ 0004:00000f90       ___lc_codepage             0041bc90     LIBC:nlsdata2.obj
+ 0004:00000f94       ___lc_collate_cp           0041bc94     LIBC:nlsdata2.obj
+ 0004:00000fc4       __cflush                   0041bcc4     LIBC:_file.obj
+ 0004:00000fc8       __pxcptinfoptrs            0041bcc8     LIBC:winxfltr.obj
+ 0004:00000fcc       _errno                     0041bccc     LIBC:crt0dat.obj
+ 0004:00000fd0       __doserrno                 0041bcd0     LIBC:crt0dat.obj
+ 0004:00000fd4       __umaskval                 0041bcd4     LIBC:crt0dat.obj
+ 0004:00000fd8       __exitflag                 0041bcd8     LIBC:crt0dat.obj
+ 0004:00000fdc       __C_Termination_Done       0041bcdc     LIBC:crt0dat.obj
+ 0004:00000fe0       __C_Exit_Done              0041bce0     LIBC:crt0dat.obj
+ 0004:00000fe4       ?_pnhHeap@@3P6AHI@ZA       0041bce4     LIBC:handler.obj
+ 0004:00000fe8       __newmode                  0041bce8     LIBC:_newmode.obj
+ 0004:00000fec       __adbgmsg                  0041bcec     LIBC:crt0msg.obj
+ 0004:00000ff0       ___@@_PchSym_@00@UcylcuivRwvxADUkirezgvUmglhUczkrUpDCUoryUlyqUrDIGUyzhvwooOlyq@Xapi_k32 0041bcf0     <common>
+ 0004:00001000       _XapiAutoPowerDownGlobals  0041bd00     <common>
+ 0004:00001050       _NtGlobalFlag              0041bd50     <common>
+ 0004:00001054       _XapiProcessHeap           0041bd54     <common>
+ 0004:00001058       _XapiCurrentTopLevelFilter 0041bd58     <common>
+ 0004:0000105c       _XapiTlsSize               0041bd5c     <common>
+ 0004:00001060       _XapiOriginalCodeSelectorEntry 0041bd60     <common>
+ 0004:00001068       ___active_heap             0041bd68     <common>
+ 0004:0000106c       ___onexitend               0041bd6c     <common>
+ 0004:00001070       ___onexitbegin             0041bd70     <common>
+ 0004:00001074       ___piob                    0041bd74     <common>
+ 0004:00001078       __nstream                  0041bd78     <common>
+ 0004:0000107c       __nhandle                  0041bd7c     <common>
+ 0004:00001080       ___pioinfo                 0041bd80     <common>
+ 0005:00000000       __IMPORT_DESCRIPTOR_xboxkrnl 0041be80     xboxkrnl:xboxkrnl.exe
+ 0005:00000014       __NULL_IMPORT_DESCRIPTOR   0041be94     xboxkrnl:xboxkrnl.exe
+ 0006:00000000       _XapiBuildNumber           0041c000     xapilib:xapi0.obj
+ 0006:00000010       _D3D8BuildNumber           0041c010     d3d8:precomp.obj
+ 0006:00000020       _XboxKrnlBuildNumber       0041c020     xboxkrnl:bldnum.obj
+ 0006:00000030       ___CrtBuildNumber          0041c030     LIBC:fpinit.obj
+ 0007:00000000       __tls_start                0041c040     xapilib:xapitls.obj
+ 0007:00000004       _XapiLastErrorCode         0041c044     xapilib:error.obj
+ 0007:00000008       __tls_end                  0041c048     xapilib:xapitls.obj
+
+ entry point at        0001:0000029a
+
+ Static symbols
+
+ 0001:00004d60       __unwind_handler           00405080 f   LIBC:exsup.obj
+ 0001:00005112       __shift                    00405432 f   LIBC:cvt.obj
+ 0001:00005523       _write_char                00405843 f   LIBC:woutput.obj
+ 0001:00005548       _write_multi_char          00405868 f   LIBC:woutput.obj
+ 0001:0000556d       _write_string              0040588d f   LIBC:woutput.obj
+ 0001:00005d6e       _write_char                0040608e f   LIBC:output.obj
+ 0001:00005da1       _write_multi_char          004060c1 f   LIBC:output.obj
+ 0001:00005dc5       _write_string              004060e5 f   LIBC:output.obj
+ 0001:00006bb6       __abstract_cw              00406ed6 f   LIBC:ieee87.obj
+ 0001:00006c48       __hw_cw                    00406f68 f   LIBC:ieee87.obj
+ 0001:00007bb1       _doexit                    00407ed1 f   LIBC:crt0dat.obj
+ 0001:00007f0f       _flsall                    0040822f f   LIBC:fflush.obj
+ 0002:000000c0       ?SwapSaveState@D3D@@YGXPAUSwapSavedState@1@@Z 00408980 f   d3d8:present.obj
+ 0002:000001a0       ?SwapFirstFlip@D3D@@YGXPAVCDevice@1@@Z 00408a60 f   d3d8:present.obj
+ 0002:000002c0       ?SwapSetState@D3D@@YGXPAUSwapSavedState@1@@Z 00408b80 f   d3d8:present.obj
+ 0002:000003e0       ?SwapRestoreState@D3D@@YGXPAUSwapSavedState@1@@Z 00408ca0 f   d3d8:present.obj
+ 0002:00000560       ?SwapSaveSurfaces@D3D@@YGXPAVCDevice@1@@Z 00408e20 f   d3d8:present.obj
+ 0002:000005f0       ?SwapRestoreSurfaces@D3D@@YGXPAVCDevice@1@@Z 00408eb0 f   d3d8:present.obj
+ 0002:00000660       ?SwapCopyBlt@D3D@@YGXPAVCDevice@1@@Z 00408f20 f   d3d8:present.obj
+ 0002:000007e0       ?SwapCopy@D3D@@YGXPAVCDevice@1@K@Z 004090a0 f   d3d8:present.obj
+ 0002:000009d0       ?SwapFlip@D3D@@YGXPAVCDevice@1@@Z 00409290 f   d3d8:present.obj
+ 0002:00000ae0       ?SwapFinish@D3D@@YGXPAVCDevice@1@@Z 004093a0 f   d3d8:present.obj
+ 0002:00005810       ?FindFence@D3D@@YGPAUFence@1@K@Z 0040e0d0 f   d3d8:pusher.obj
+ 0002:00006a20       ?GetColorMaterial@D3D@@YGKXZ 0040f2e0 f   d3d8:lazy.obj
+ 0002:00007740       ?SetLightColors@D3D@@YGPCKPCKPBULight@1@KK@Z 00410000 f   d3d8:lazy.obj
+ 0002:00007830       ?SetSceneAmbientAndMaterialEmission@D3D@@YGPCKPCKK@Z 004100f0 f   d3d8:lazy.obj
+ 0002:000079f0       ?SetSpecularParameters@D3D@@YGPCKPCK@Z 004102b0 f   d3d8:lazy.obj
+ 0002:0000bd80       ?CombinerInput@D3D@@YGKKKK@Z 00414640 f   d3d8:combiner.obj
