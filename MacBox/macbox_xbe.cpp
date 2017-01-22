@@ -11,6 +11,20 @@
 #include "macbox_d3d.hpp"
 #include "macbox_d3ddevice.hpp"
 
+#include <pthread.h>
+
+
+void macbox_vm_callback( void* main_function )
+{
+    /* Give this thread a proper name */
+    pthread_setname_np( "VMThread" );
+    
+    /* Jump to the main function (not the entry point) */
+    void(*_main)(void) = (void(*)(void)) main_function;
+    _main();
+    
+    pthread_exit(NULL);
+}
 
 void macbox_install_wrapper( void* function_addr, void* wrapper_addr )
 {
@@ -39,9 +53,10 @@ bool macbox_xbe_run( const char* xbefile, uint32_t main_function )
         macbox_install_wrapper( reinterpret_cast<void*>(0x1A270), reinterpret_cast<void*>(D3DDevice_Clear) );
         macbox_install_wrapper( reinterpret_cast<void*>(0x1ABC0), reinterpret_cast<void*>(D3DDevice_Swap) );
         
-        /* Jump to the main function (not to be confused with the entry point) */
-        void(*_main)() = (void(*)()) main_function;
-        _main();
+        /* Start up the .xbe in a new thread */
+        pthread_t thread;
+        pthread_create( &thread, NULL, (void *(*)(void*)) macbox_vm_callback, (void*) main_function );
+        pthread_join( thread, NULL );
     }
     
     return false;

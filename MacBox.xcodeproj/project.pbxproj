@@ -316,7 +316,7 @@
 				);
 				INFOPLIST_FILE = MacBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				OTHER_CFLAGS = "-mstackrealign";
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-pagezero_size",
 					0x10000000,
@@ -344,7 +344,7 @@
 				);
 				INFOPLIST_FILE = MacBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				OTHER_CFLAGS = "-mstackrealign";
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-pagezero_size",
 					0x10000000,
